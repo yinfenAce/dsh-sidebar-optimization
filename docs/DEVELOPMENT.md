@@ -37,6 +37,8 @@ npm pack --dry-run
 4. Commit, tag `vX.Y.Z`, create a GitHub Release, attach the npm tarball.
 5. Keep only the latest public release; historical releases are hidden.
 
+You can also run `scripts/release.sh` after bumping the version; it checks, packs, tags, pushes and creates the release. A tag-triggered `release.yml` workflow is prepared for the same flow.
+
 ## Scope
 
 Keep changes client-only. Do not add arbitrary redirect URLs, host services, or hidden network calls. If a new feature needs a host API, document it and keep a graceful fallback.

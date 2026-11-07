@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.6 — 2026-11-07
+
+- Manual entry guidance: 「扫描当前入口」 lists visible sidebar/tab labels, 「测试入口」 highlights the matched target without navigating.
+- Saved/label matching is restricted to navigation containers (sidebar, header tabs, view tabs) and skips external links; the manual entry cannot be used as an arbitrary button/link clicker.
+- Manual hints explain what to fill and that it only opens installed plugin entries, never external URLs.
+
 ## 0.3.5 — 2026-11-07
 
 - Removed the arbitrary page-URL field from the manual usage entry. A user-supplied URL could be used as a redirect/phishing entry and get the plugin reported.

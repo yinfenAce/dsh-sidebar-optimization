@@ -85,6 +85,9 @@ test('settings card opens with the plugin title and version', () => {
     for (const child of (el && el.children) || []) walk(child);
   })(overlay);
   assert.equal(tabs.length, 3);
-  assert.deepEqual(tabs.map((t) => t.textContent), ['布局与手势', '显示与余额', '用量入口']);
+  assert.deepEqual(tabs.map((t) => t.textContent), ['界面', '显示', '通用']);
   assert.ok(tabs[0].className.indexOf('is-active') >= 0);
+  assert.ok(texts.includes('100%'));
+  assert.ok(texts.includes('显示后自动隐藏（秒）'));
+  assert.ok(texts.includes('设置备份与恢复'));
 });

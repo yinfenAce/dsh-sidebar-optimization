@@ -1,7 +1,7 @@
 {
   "name": "dsh-sidebar-optimization",
-  "version": "0.3.17",
-  "description": "DSHBox 移动端侧边栏增强：可调宽度与左右布局、顶部分类设置、余额隐私与低额预警、可拖动菜单、键盘跟随。",
+  "version": "0.3.18",
+  "description": "DSHBox 移动端侧边栏增强：45–100% 宽度、顶部分类、余额隐私/预警、自动隐藏计时、设置备份与恢复。",
   "license": "MIT",
   "type": "commonjs",
   "main": "lib/index.js",

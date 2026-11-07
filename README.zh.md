@@ -3,7 +3,7 @@
 [English](README.md) | **中文**
 
 [![CI](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml/badge.svg)](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml)
-![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · **v0.3.17** · [更新记录](CHANGELOG.md)
+![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · **v0.3.18** · [更新记录](CHANGELOG.md)
 
 面向 [DSHBox](https://github.com/WSK-build/DSHBox) / DeepSeek Harness 的移动端侧边栏优化插件。它是纯客户端插件，不替换内置的 `@local/dsh-mobile-adapt`，只覆盖部分移动端样式并增加交互。
 
@@ -21,11 +21,11 @@
 
 *手动用量入口。*
 
-> 截图摄于 **v0.3.13**。后续版本只做增量修改和分类标签，暂未重拍；当前界面已改为三个顶部标签，具体以最新 Release 为准。
+> 截图摄于 **v0.3.13**。后续版本只做增量修改和分类标签，暂未重拍；当前界面改为「界面 / 显示 / 通用」三个顶部标签，宽度上限提升到 100%；具体以最新 Release 为准。
 
 ## 功能
 
-- **侧栏宽度可调**：默认 60%，支持 50% / 60% / 70% 预设和 45%–80% 自定义滑杆，设置会记住；
+- **侧栏宽度可调**：默认 60%，支持 50% / 60% / 70% / 100% 预设和 45%–100% 自定义滑杆，设置会记住；
 - **左右布局互换**：侧栏可移到右侧，滑动方向同步反转；
 - **滑动范围可调**：20%–80%，调整时显示浅蓝范围提示；
 - **点击空白关闭**：点击右侧空白区域收起侧栏；
@@ -40,8 +40,11 @@
 - **刷新余额**：余额菜单中可直接重新获取；
 - **余额隐私**：开启后金额显示为 `****`，右侧出现带斜线的眼睛按钮；点击眼睛显示余额，再点恢复星号；
 - **余额预警**：开启后显示阈值设置，默认 ¥1；余额小于等于阈值时数字变红，阈值可自定义（≥0）；
+- **自动隐藏倒计时**：隐私开启时，展开余额后 5–600 秒自动恢复 `****`，默认 30 秒；
+- **阈值快捷值**：1 / 5 / 10 元一键设置；
+- **设置备份**：复制当前设置、从文本恢复、恢复默认设置；只操作本插件键，恢复后页面重载。
 - **用量入口**：优先手动入口，其次自动识别已启用的用量/上下文插件，最后打开官方平台用量页；
-- **顶部分类标签**：布局与手势、显示与余额、用量入口；默认第一个，点击切换对应内容；
+- **顶部分类标签**：界面、显示、通用；默认第一个，点击切换对应内容；
 - **设置卡片可滚动**：屏幕较矮时内容可滚动，不遮挡操作。
 
 ## 安装
@@ -55,7 +58,7 @@ dsh plugin --profile web add github:yinfenAce/dsh-sidebar-optimization
 或使用 Release 的固定版本 tarball：
 
 ```sh
-dsh plugin --profile web add https://github.com/yinfenAce/dsh-sidebar-optimization/releases/download/v0.3.17/dsh-sidebar-optimization-0.3.17.tgz
+dsh plugin --profile web add https://github.com/yinfenAce/dsh-sidebar-optimization/releases/download/v0.3.18/dsh-sidebar-optimization-0.3.18.tgz
 ```
 
 安装后需要**完全退出 DSHBox 再启动**；只刷新页面不会重新加载客户端插件。

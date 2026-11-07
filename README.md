@@ -3,7 +3,7 @@
 [![CI](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml/badge.svg)](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml)
 # 侧边栏优化 · dsh-sidebar-optimization
 
-![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · **v0.3.17** · [Changelog](CHANGELOG.md)
+![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · **v0.3.18** · [Changelog](CHANGELOG.md)
 
 Sidebar optimization for [DSHBox](https://github.com/WSK-build/DSHBox) / DeepSeek Harness (DSH).
 
@@ -24,11 +24,11 @@ that plugin; it only overrides a few mobile-specific styles and adds a couple of
 
 *Manual usage entry.*
 
-> The screenshots were captured on **v0.3.13**. Later releases add features and a tabbed layout, so the images are kept temporarily. The current UI uses three top tabs (layout, display, usage); use the latest Release for exact layout.
+> The screenshots were captured on **v0.3.13**. Later releases add features and a tabbed layout, so the images are kept temporarily. The current UI uses three top tabs — Interface, Display, General — and the width can now reach 100%.
 
 ## What it does
 
-- **Adjustable half-screen sidebar** — default 60% of the viewport. Open the sidebar and tap **「主页排版设置」** above Settings; a card opens with a live preview, 50% / 60% / 70% presets and a custom 45%–80% slider. The choice is remembered.
+- **Adjustable half-screen sidebar** — default 60% of the viewport. Open the sidebar and tap **「主页排版设置」** above Settings; a card opens with a live preview, 50% / 60% / 70% / 100% presets and a custom 45%–100% slider. The choice is remembered.
 - **Tap the blank area to close** — the backdrop is forced visible (the bundled plugin hides it with an
   inline `display:none`), so tapping the right-hand blank strip closes the drawer.
 - **Free single scroll** — panels, the session list and the footer scroll as one column, instead of the
@@ -46,11 +46,13 @@ that plugin; it only overrides a few mobile-specific styles and adds a couple of
 - **Balance quick actions** — tap the amount to open 「查看用量 / 充值」; usage checks installed + enabled third-party usage/context plugins and falls back to the platform usage page, top-up opens the DeepSeek platform.
 - **Live account balance (optional)** — refreshed whenever the drawer opens, formatted to two decimals. It is shown only when the DeepSeek mark is hidden; with the mark hidden and balance off, nothing is shown. A 2–4 character custom label can be saved in the card (restart DSH to apply).
 - **Balance privacy** — masks the amount as `****` with an eye-slash button; the eye reveals it temporarily, and closing the drawer or switching apps re-masks it.
-- **Low-balance warning** — optional threshold (default ¥1); the amount turns red at or below it. The balance menu also has a manual refresh action.
+- **Low-balance warning** — optional threshold (default ¥1); the amount turns red at or below it. The balance menu also has a manual refresh action. Presets 1 / 5 / 10 are available.
+- **Auto-hide countdown** — when privacy is on, the revealed amount returns to `****` after a configurable 5–600 seconds (default 30).
+- **Settings backup** — copy the plugin's settings as JSON, restore from pasted text, or reset only the plugin's own keys; the page reloads after restore/reset.
 - **Left/right layout swap** — move the sidebar to the right and the right panel to the left; the swipe direction reverses with it (right third, swipe left to open).
 - **Draggable ☰ button** — long-press the ☰ and drag it; on release it snaps to the nearest side, and the position is remembered.
 - **Hide the DeepSeek brand mark** — optional toggle in the settings card; the collapse control stays in place.
-- **Tabbed settings card** — top tabs for layout/gestures, display/balance, and usage; the layout tab is selected by default; tapping another tab switches the panel.
+- **Tabbed settings card** — top tabs for Interface, Display and General; the Interface tab is selected by default; tapping another tab switches the panel.
 - **Scrollable settings card** — the card stays centered; its content scrolls when the viewport is short.
 - **No blue focus ring on tap** — touch interactions no longer leave a square focus outline; keyboard focus rings are preserved.
 - **Copy that actually works** — a textarea/`execCommand` fallback backs the Clipboard API, and every code block gets a visible “复制” button.
@@ -95,7 +97,7 @@ Then restart DSH (or reload the DSH page) so the client bundle is served.
 Every release also attaches an npm-format tarball, so you can install an exact version without publishing to npm:
 
 ```sh
-dsh plugin --profile web add https://github.com/yinfenAce/dsh-sidebar-optimization/releases/download/v0.3.17/dsh-sidebar-optimization-0.3.17.tgz
+dsh plugin --profile web add https://github.com/yinfenAce/dsh-sidebar-optimization/releases/download/v0.3.18/dsh-sidebar-optimization-0.3.18.tgz
 ```
 
 ## Turn it off

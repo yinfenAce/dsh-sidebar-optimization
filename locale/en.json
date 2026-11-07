@@ -1,6 +1,6 @@
 {
   "meta": {
     "title": "Home Layout Settings",
-    "description": "DSHBox mobile sidebar enhancements: adjustable width and side swap, top tabs for settings, balance privacy and low-balance warning, draggable menu, copy fallback, keyboard follow."
+    "description": "DSHBox mobile sidebar enhancements: 45–100% width, top tabs, balance privacy with auto-hide, and settings backup/restore."
   }
 }

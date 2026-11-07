@@ -3,7 +3,7 @@
 [English](README.md) | **中文**
 
 [![CI](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml/badge.svg)](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml)
-![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · **v0.3.21** · [更新记录](CHANGELOG.md)
+![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · **v0.3.22** · [更新记录](CHANGELOG.md)
 
 面向 [DSHBox](https://github.com/WSK-build/DSHBox) / DeepSeek Harness 的移动端侧边栏优化插件。它是纯客户端插件，不替换内置的 `@local/dsh-mobile-adapt`，只覆盖部分移动端样式并增加交互。
 
@@ -29,7 +29,7 @@
 - **左右布局互换**：侧栏可移到右侧，滑动方向同步反转；
 - **滑动范围可调**：20%–80%，调整时显示浅蓝范围提示；
 - **☰ 位置重置**：长按仍可拖动；界面页提供重置按钮，恢复默认位置；
-- **界面动效开关**：关闭后卡片、提示、范围提示、菜单和视图切换立即完成；
+- **界面动效开关**：分组切换、隐私/预警联动行也带过渡；关闭后卡片、提示、范围提示、菜单、分组和视图切换立即完成；
 - **低额预警红点**：余额低于阈值时，侧栏「主页排版设置」行显示红点，不显示金额。
 - **点击空白关闭**：点击右侧空白区域收起侧栏；
 - **自由滚动**：面板、会话列表、底部区域作为一列滚动；
@@ -61,7 +61,7 @@ dsh plugin --profile web add github:yinfenAce/dsh-sidebar-optimization
 或使用 Release 的固定版本 tarball：
 
 ```sh
-dsh plugin --profile web add https://github.com/yinfenAce/dsh-sidebar-optimization/releases/download/v0.3.21/dsh-sidebar-optimization-0.3.21.tgz
+dsh plugin --profile web add https://github.com/yinfenAce/dsh-sidebar-optimization/releases/download/v0.3.22/dsh-sidebar-optimization-0.3.22.tgz
 ```
 
 安装后需要**完全退出 DSHBox 再启动**；只刷新页面不会重新加载客户端插件。

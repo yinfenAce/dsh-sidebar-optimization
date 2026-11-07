@@ -24,6 +24,7 @@ that plugin; it only overrides a few mobile-specific styles and adds a couple of
   (unless DSH already closed it).
 - **Open reveals the active session** — opening the drawer scrolls the current session into view.
 - **Live account balance (optional)** — refreshed whenever the drawer opens, formatted to two decimals. It is shown only when the DeepSeek mark is hidden; with the mark hidden and balance off, nothing is shown. A 2–4 character custom label can be saved in the card (restart DSH to apply).
+- **Left/right layout swap** — move the sidebar to the right and the right panel to the left; the swipe direction reverses with it (right third, swipe left to open).
 - **Draggable ☰ button** — long-press the ☰ and drag it; on release it snaps to the nearest side, and the position is remembered.
 - **Hide the DeepSeek brand mark** — optional toggle in the settings card; the collapse control stays in place.
 - **Scrollable settings card** — the card stays centered; its content scrolls when the viewport is short.

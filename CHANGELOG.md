@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.0 — 2026-11-07
+
+- Left/right layout swap: sidebar to the right, right panel to the left.
+- Reversed swipe: open from the right third with a left swipe, close with a right swipe.
+- ☰ defaults to the right edge when mirror mode is on; a saved drag position still wins.
+
 ## 0.1.1 — 2026-11-07
 
 - Broaden the declared compatibility: DSH `0.2.x` (>=0.2.0-rc.2 <0.3.0), DSHBox 1.4+/1.5.x, Android 10+.

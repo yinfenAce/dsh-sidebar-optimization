@@ -3,7 +3,7 @@
 [![CI](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml/badge.svg)](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml)
 # 侧边栏优化 · dsh-sidebar-optimization
 
-![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · **v0.3.19** · [Changelog](CHANGELOG.md)
+![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · **v0.3.20** · [Changelog](CHANGELOG.md)
 
 Sidebar optimization for [DSHBox](https://github.com/WSK-build/DSHBox) / DeepSeek Harness (DSH).
 
@@ -46,7 +46,7 @@ that plugin; it only overrides a few mobile-specific styles and adds a couple of
 - **Balance quick actions** — tap the amount to open 「查看用量 / 充值」; usage checks installed + enabled third-party usage/context plugins and falls back to the platform usage page, top-up opens the DeepSeek platform.
 - **Live account balance (optional)** — refreshed whenever the drawer opens, formatted to two decimals. It is shown only when the DeepSeek mark is hidden; with the mark hidden and balance off, nothing is shown. A 2–4 character custom label can be saved in the card (restart DSH to apply).
 - **Balance privacy** — masks the amount as `****` with an eye-slash button; the eye reveals it temporarily, and closing the drawer or switching apps re-masks it.
-- **Low-balance warning** — optional threshold (default ¥1); the amount turns red at or below it. The balance menu also has a manual refresh action. Presets 1 / 5 / 10 are available.
+- **Low-balance warning** — optional threshold (default ¥1, max ¥999999); the amount turns red at or below it. The balance menu also has a manual refresh action. Presets 1 / 5 / 10 are available.
 - **Auto-hide countdown** — when privacy is on, the revealed amount returns to `****` after a configurable 5–600 seconds (default 30).
 - **Settings backup** — copy the plugin's settings as JSON, restore from pasted text, or reset only the plugin's own keys. Reset clears width, layout, swipe/gesture, brand, balance/privacy/warning, auto-hide, label, manual entry and ☰ position; it does not touch the DSH account, balance data, chats or other plugins. The page reloads after restore/reset.
 - **Left/right layout swap** — move the sidebar to the right and the right panel to the left; the swipe direction reverses with it (right third, swipe left to open).
@@ -97,7 +97,7 @@ Then restart DSH (or reload the DSH page) so the client bundle is served.
 Every release also attaches an npm-format tarball, so you can install an exact version without publishing to npm:
 
 ```sh
-dsh plugin --profile web add https://github.com/yinfenAce/dsh-sidebar-optimization/releases/download/v0.3.19/dsh-sidebar-optimization-0.3.19.tgz
+dsh plugin --profile web add https://github.com/yinfenAce/dsh-sidebar-optimization/releases/download/v0.3.20/dsh-sidebar-optimization-0.3.20.tgz
 ```
 
 ## Turn it off

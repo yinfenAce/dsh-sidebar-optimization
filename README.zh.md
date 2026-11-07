@@ -3,7 +3,7 @@
 [English](README.md) | **中文**
 
 [![CI](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml/badge.svg)](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml)
-![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · **v0.3.19** · [更新记录](CHANGELOG.md)
+![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · **v0.3.20** · [更新记录](CHANGELOG.md)
 
 面向 [DSHBox](https://github.com/WSK-build/DSHBox) / DeepSeek Harness 的移动端侧边栏优化插件。它是纯客户端插件，不替换内置的 `@local/dsh-mobile-adapt`，只覆盖部分移动端样式并增加交互。
 
@@ -39,7 +39,7 @@
 - **余额隐私自动恢复**：关闭侧栏或切换后台后恢复 `****`；
 - **刷新余额**：余额菜单中可直接重新获取；
 - **余额隐私**：开启后金额显示为 `****`，右侧出现带斜线的眼睛按钮；点击眼睛显示余额，再点恢复星号；
-- **余额预警**：开启后显示阈值设置，默认 ¥1；余额小于等于阈值时数字变红，阈值可自定义（≥0）；
+- **余额预警**：开启后显示阈值设置，默认 ¥1；余额小于等于阈值时数字变红，阈值可自定义（0–999999）；
 - **自动隐藏倒计时**：隐私开启时，展开余额后 5–600 秒自动恢复 `****`，默认 30 秒；
 - **阈值快捷值**：1 / 5 / 10 元一键设置；
 - **设置备份**：复制当前设置、从文本恢复、恢复默认设置；重置会清除宽度、布局、滑动/手势、标识隐藏、余额/隐私/预警、自动隐藏、标签、手动入口和 ☰ 位置，不影响 DSH 账号、余额数据、聊天记录和其他插件；恢复后页面重载。
@@ -58,7 +58,7 @@ dsh plugin --profile web add github:yinfenAce/dsh-sidebar-optimization
 或使用 Release 的固定版本 tarball：
 
 ```sh
-dsh plugin --profile web add https://github.com/yinfenAce/dsh-sidebar-optimization/releases/download/v0.3.19/dsh-sidebar-optimization-0.3.19.tgz
+dsh plugin --profile web add https://github.com/yinfenAce/dsh-sidebar-optimization/releases/download/v0.3.20/dsh-sidebar-optimization-0.3.20.tgz
 ```
 
 安装后需要**完全退出 DSHBox 再启动**；只刷新页面不会重新加载客户端插件。

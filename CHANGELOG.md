@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.8 — 2026-11-07
+
+- Scan results are now a visible list of tappable labels instead of a native select with a blank placeholder.
+- Scan/test buttons use a secondary outline style; buttons no longer visually merge.
+- Tutorial copy rewritten in plain steps; removed 「最快」/「兜底」 wording.
+
 ## 0.3.7 — 2026-11-07
 
 - Scanner now only lists navigation entries (sidebar + header/view tabs), not conversation command/tool cards.

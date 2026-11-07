@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.13 — 2026-11-07
+
+- Balance privacy: off by default; when enabled the amount shows `****` and an eye-slash button appears. Tapping the eye reveals the amount and removes the slash; tapping again hides it.
+- Balance warning: off by default; when enabled, a threshold row appears with a default of ¥1. The amount turns red when the balance is less than or equal to the threshold.
+- Threshold is editable (≥0) and remembered; disabling the warning hides the threshold row.
+- Privacy/warning are independent of the show-balance switch.
+
 ## 0.3.12 — 2026-11-07
 
 - Removed the card × button (a native floating overlay covered it); tapping outside now closes with a 140ms fade/scale-out.

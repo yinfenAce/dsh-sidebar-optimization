@@ -3,7 +3,7 @@
 [English](README.md) | **中文**
 
 [![CI](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml/badge.svg)](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml)
-![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · **v0.3.13** · [更新记录](CHANGELOG.md)
+![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · **v0.3.14** · [更新记录](CHANGELOG.md)
 
 面向 [DSHBox](https://github.com/WSK-build/DSHBox) / DeepSeek Harness 的移动端侧边栏优化插件。它是纯客户端插件，不替换内置的 `@local/dsh-mobile-adapt`，只覆盖部分移动端样式并增加交互。
 
@@ -11,7 +11,7 @@
 
 ![设置卡片](docs/screenshots/settings-real.jpg)
 
-*实机截图（v0.3.13，余额已隐藏）。*
+*实机截图（v0.3.13；0.3.14 增加余额刷新与自动恢复星号）。*
 
 ![余额隐私与预警](docs/screenshots/settings-privacy.jpg)
 
@@ -34,6 +34,8 @@
 - **复制修正**：Clipboard API 失败时使用 textarea 兜底，代码块提供“复制”按钮；
 - **视图切换动画**：切换对话/轨迹时淡入并轻微上移；
 - **余额显示**：可选显示账户余额，保留两位小数；
+- **余额隐私自动恢复**：关闭侧栏或切换后台后恢复 `****`；
+- **刷新余额**：余额菜单中可直接重新获取；
 - **余额隐私**：开启后金额显示为 `****`，右侧出现带斜线的眼睛按钮；点击眼睛显示余额，再点恢复星号；
 - **余额预警**：开启后显示阈值设置，默认 ¥1；余额小于等于阈值时数字变红，阈值可自定义（≥0）；
 - **用量入口**：优先手动入口，其次自动识别已启用的用量/上下文插件，最后打开官方平台用量页；
@@ -50,7 +52,7 @@ dsh plugin --profile web add github:yinfenAce/dsh-sidebar-optimization
 或使用 Release 的固定版本 tarball：
 
 ```sh
-dsh plugin --profile web add https://github.com/yinfenAce/dsh-sidebar-optimization/releases/download/v0.3.13/dsh-sidebar-optimization-0.3.13.tgz
+dsh plugin --profile web add https://github.com/yinfenAce/dsh-sidebar-optimization/releases/download/v0.3.14/dsh-sidebar-optimization-0.3.14.tgz
 ```
 
 安装后需要**完全退出 DSHBox 再启动**；只刷新页面不会重新加载客户端插件。

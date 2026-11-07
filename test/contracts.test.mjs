@@ -33,7 +33,8 @@ test('bundle patch declares the client row', () => {
 
 test('README references the latest version and screenshot', () => {
   const readme = read('README.md');
-  assert.match(readme, /v0\.3\.13/);
+  const pkgVersion = json('package.json').version;
+  assert.ok(readme.includes('v' + pkgVersion));
   assert.match(readme, /docs\/screenshots\//);
   assert.ok(!readme.includes('v0.1.0/dsh-sidebar-optimization-0.1.0.tgz'));
 });

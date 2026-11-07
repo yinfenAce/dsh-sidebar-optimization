@@ -1,6 +1,6 @@
 {
   "meta": {
     "title": "Home Layout Settings",
-    "description": "DSHBox mobile UI tweaks: sidebar width and side swap, balance privacy and low-balance warning, draggable menu, code copy, keyboard follow."
+    "description": "DSHBox mobile sidebar enhancements: adjustable width and side swap, balance privacy and low-balance warning, draggable menu, copy fallback, keyboard follow."
   }
 }

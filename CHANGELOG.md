@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.3.14 — 2026-11-07
+
+- 余额隐私：关闭侧栏或切换后台后自动恢复 `****`，避免展开状态被保留。
+- 余额菜单新增「刷新余额」，无需关闭再打开侧栏。
+- 余额预警阈值清空时不再变成 0；失焦后恢复为已保存值。
+- 设置卡片支持 `Esc` 关闭；重复打开时清理旧键盘监听。
+- 修复 `account.getBalance` 同步抛错时刷新状态卡死的问题。
+
 ## 0.3.13 — 2026-11-07
 
 - Balance privacy: off by default; when enabled the amount shows `****` and an eye-slash button appears. Tapping the eye reveals the amount and removes the slash; tapping again hides it.

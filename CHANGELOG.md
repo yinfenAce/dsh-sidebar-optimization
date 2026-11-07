@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.2 — 2026-11-07
+
+- Fix: the v0.3.1 fast path could click an unrelated 「上下文」 element and then close the drawer with no jump.
+- Navigation matching is exact first (with a loose fallback only for custom entry/title), and the drawer is closed only after a real target is found.
+- The speed win stays via the 60s plugin-state cache and prefetch; no blind click.
+
 ## 0.3.1 — 2026-11-07
 
 - Faster usage jump: if the Context feature tab/sidebar entry is already present, click it immediately instead of waiting for the plugin-manager query.

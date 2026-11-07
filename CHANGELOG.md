@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.11 — 2026-11-07
+
+- Motion polish: settings card fades/scales in (160–180ms), balance menu fades/slides in (140ms); no layout or behavior changes.
+- Conflict guards: page swipes are ignored while the settings card or balance menu is open; opening the card closes the balance menu first.
+- Audited existing paths: drawer width/side/swap, swipe, ☰ drag/snap, brand/balance, manual priority, copy, view animation, keyboard and long-chat rules are unchanged.
+
 ## 0.3.10 — 2026-11-07
 
 - Manual-entry instructions rewritten in formal, numbered steps; the detailed guide is collapsed by default, with a one-line operation order above the fields.

@@ -1,0 +1,49 @@
+name: Bug report
+description: Something in the mobile drawer/settings does not work
+labels: [bug]
+body:
+  - type: input
+    id: dshbox
+    attributes:
+      label: DSHBox version
+      placeholder: "1.5.1"
+    validations:
+      required: true
+  - type: input
+    id: dsh
+    attributes:
+      label: DSH version
+      placeholder: "0.2.1-rc.5"
+    validations:
+      required: true
+  - type: input
+    id: android
+    attributes:
+      label: Android / WebView version
+      placeholder: "Android 14 / WebView 130"
+    validations:
+      required: true
+  - type: checkboxes
+    id: adapt
+    attributes:
+      label: Is Mobile adaptation enabled?
+      options:
+        - label: dsh-mobile-adapt is enabled
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. Open the sidebar\n2. Tap ...\n3. ..."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshot / recording / error
+      description: If the card fails to apply, include window.__dshTweaksLastError.

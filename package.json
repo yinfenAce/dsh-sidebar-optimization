@@ -18,7 +18,9 @@
     "README.md",
     "LICENSE",
     "CHANGELOG.md",
-    "locale"
+    "locale",
+    "index.d.ts",
+    "docs"
   ],
   "repository": {
     "type": "git",
@@ -27,11 +29,11 @@
   "homepage": "https://github.com/yinfenAce/dsh-sidebar-optimization",
   "keywords": [
     "dsh",
+    "dshbox",
     "deepseek-harness",
-    "dsh-plugin",
     "mobile",
     "sidebar",
-    "dshbox"
+    "plugin"
   ],
   "engines": {
     "dsh": ">=0.2.0-rc.2 <0.3.0"
@@ -51,5 +53,10 @@
         "0.2.1-rc.5": "compatible"
       }
     }
+  },
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check lib/client.js && node --check lib/index.js"
   }
 }

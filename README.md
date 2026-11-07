@@ -7,6 +7,12 @@ Sidebar optimization for [DSHBox](https://github.com/WSK-build/DSHBox) / DeepSee
 A small, client-only layer on top of the bundled `@local/dsh-mobile-adapt` plugin. It does not replace
 that plugin; it only overrides a few mobile-specific styles and adds a couple of interactions.
 
+## Screenshot
+
+![Settings card structure](docs/screenshots/settings-card.svg)
+
+*设置卡片结构示意（非实机截图）。实际界面以当前 Release 为准。*
+
 ## What it does
 
 - **Adjustable half-screen sidebar** — default 60% of the viewport. Open the sidebar and tap **「主页排版设置」** above Settings; a card opens with a live preview, 50% / 60% / 70% presets and a custom 45%–80% slider. The choice is remembered.
@@ -39,7 +45,7 @@ that plugin; it only overrides a few mobile-specific styles and adds a couple of
 
 The balance menu looks for an enabled bundle whose id/name matches `context`, `usage`, `token-usage` or `token-meter`, then opens that plugin's **feature entry** (the sidebar item or conversation-view tab whose text matches the plugin's title). It does not open the bundle's configuration page.
 
-To add a plugin that is not auto-detected, either fill the manual entry form (package name + sidebar/tab label; use 「扫描当前入口」 and 「测试入口」) in the settings card, or add its bundle id and a short navigation label to `USAGE_BUNDLES` in `lib/client.js`. If the plugin has no feature entry (only a settings page), the usage action falls back to `https://platform.deepseek.com/usage`.
+To add a plugin that is not auto-detected, either fill the manual entry form (package name + sidebar/tab label; use 「扫描当前入口」 and 「验证入口」) in the settings card, or add its bundle id and a short navigation label to `USAGE_BUNDLES` in `lib/client.js`. If the plugin has no feature entry (only a settings page), the usage action falls back to `https://platform.deepseek.com/usage`.
 
 ## Compatibility
 
@@ -93,6 +99,19 @@ dsh plugin --profile web remove dsh-sidebar-optimization
   `dsh-mobile-adapt`'s class names or drawer structure can break parts of it.
 - Only mobile widths are affected; the desktop layout is deliberately left alone.
 - No background services, no data collection, no network calls.
+
+## Development
+
+- [Architecture](docs/ARCHITECTURE.md)
+- [Development and release flow](docs/DEVELOPMENT.md)
+- [Contributing](CONTRIBUTING.md)
+- [Security policy](SECURITY.md)
+
+```sh
+npm run check
+npm test
+npm pack --dry-run
+```
 
 ## License
 

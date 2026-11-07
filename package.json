@@ -1,7 +1,7 @@
 {
-  "name": "dsh-mobile-tweaks",
+  "name": "dsh-sidebar-optimization",
   "version": "0.1.0",
-  "description": "Sidebar optimization for DSHBox / DeepSeek Harness: adjustable 45-80% sidebar, settings card with live preview, copy fixes, view-switch animation.",
+  "description": "Sidebar optimization for DSHBox / DeepSeek Harness: adjustable 45-80% sidebar, a settings card with live preview, copy fixes, view-switch animation.",
   "license": "MIT",
   "type": "commonjs",
   "main": "lib/index.js",
@@ -19,9 +19,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/yinfenAce/dsh-mobile-tweaks.git"
+    "url": "https://github.com/yinfenAce/dsh-sidebar-optimization.git"
   },
-  "homepage": "https://github.com/yinfenAce/dsh-mobile-tweaks",
+  "homepage": "https://github.com/yinfenAce/dsh-sidebar-optimization",
   "keywords": [
     "dsh",
     "deepseek-harness",

@@ -1,4 +1,4 @@
-# dsh-mobile-tweaks bundle patch: inserts the client-only plugin row.
+# dsh-sidebar-optimization bundle patch: inserts the client-only plugin row.
 - insert:
     - id: mobile-tweaks
-      name: dsh-mobile-tweaks
+      name: dsh-sidebar-optimization

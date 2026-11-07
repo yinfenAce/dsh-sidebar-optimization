@@ -1,4 +1,4 @@
-# 侧边栏优化 · dsh-mobile-tweaks
+# 侧边栏优化 · dsh-sidebar-optimization
 
 Sidebar optimization for [DSHBox](https://github.com/WSK-build/DSHBox) / DeepSeek Harness (DSH).
 
@@ -7,7 +7,7 @@ that plugin; it only overrides a few mobile-specific styles and adds a couple of
 
 ## What it does
 
-- **Adjustable half-screen sidebar** — default 60% of the viewport. Open the sidebar and tap **「侧边栏优化」** above Settings; a card opens with a live preview, 50% / 60% / 70% presets and a custom 45%–80% slider. The choice is remembered.
+- **Adjustable half-screen sidebar** — default 60% of the viewport. Open the sidebar and tap **「主页排版设置」** above Settings; a card opens with a live preview, 50% / 60% / 70% presets and a custom 45%–80% slider. The choice is remembered.
 - **Tap the blank area to close** — the backdrop is forced visible (the bundled plugin hides it with an
   inline `display:none`), so tapping the right-hand blank strip closes the drawer.
 - **Free single scroll** — panels, the session list and the footer scroll as one column, instead of the
@@ -37,13 +37,13 @@ that plugin; it only overrides a few mobile-specific styles and adds a couple of
 From npm (once published):
 
 ```sh
-dsh plugin --profile web add dsh-mobile-tweaks
+dsh plugin --profile web add dsh-sidebar-optimization
 ```
 
 From source:
 
 ```sh
-dsh plugin --profile web add github:yinfenAce/dsh-mobile-tweaks
+dsh plugin --profile web add github:yinfenAce/dsh-sidebar-optimization
 ```
 
 Then restart DSH (or reload the DSH page) so the client bundle is served.
@@ -56,7 +56,7 @@ off, this plugin's style is disabled too.
 To remove the plugin:
 
 ```sh
-dsh plugin --profile web remove dsh-mobile-tweaks
+dsh plugin --profile web remove dsh-sidebar-optimization
 ```
 
 ## Caveats

@@ -24,7 +24,7 @@ that plugin; it only overrides a few mobile-specific styles and adds a couple of
 
 *Manual usage entry.*
 
-> The screenshots were captured on **v0.3.13**. Later releases only add features and grouped layout, so the images are kept temporarily. The current UI uses three top tabs (layout, display, usage); use the latest Release for exact layout.
+> The screenshots were captured on **v0.3.13**. Later releases add features and a tabbed layout, so the images are kept temporarily. The current UI uses three top tabs (layout, display, usage); use the latest Release for exact layout.
 
 ## What it does
 

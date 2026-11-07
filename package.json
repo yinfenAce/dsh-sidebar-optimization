@@ -1,7 +1,7 @@
 {
   "name": "dsh-sidebar-optimization",
   "version": "0.3.13",
-  "description": "Sidebar optimization for DSHBox / DeepSeek Harness: adjustable 45-80% sidebar, a settings card with live preview, copy fixes, view-switch animation.",
+  "description": "DSHBox 移动端界面优化：侧栏宽度与左右布局、余额隐私与预警、可拖动菜单、代码复制、键盘跟随等。",
   "license": "MIT",
   "type": "commonjs",
   "main": "lib/index.js",
@@ -9,14 +9,16 @@
     ".": "./lib/index.js",
     "./client": "./lib/client.js",
     "./package.json": "./package.json",
-    "./cordis.patch.yml": "./cordis.patch.yml"
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json"
   },
   "files": [
     "lib",
     "cordis.patch.yml",
     "README.md",
     "LICENSE",
-    "CHANGELOG.md"
+    "CHANGELOG.md",
+    "locale"
   ],
   "repository": {
     "type": "git",

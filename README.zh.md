@@ -3,7 +3,7 @@
 [English](README.md) | **中文**
 
 [![CI](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml/badge.svg)](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml)
-![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · **v0.3.23** · [更新记录](CHANGELOG.md)
+![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · **v0.4.0** · [更新记录](CHANGELOG.md)
 
 面向 [DSHBox](https://github.com/WSK-build/DSHBox) / DeepSeek Harness 的移动端侧边栏优化插件。它是纯客户端插件，不替换内置的 `@local/dsh-mobile-adapt`，只覆盖部分移动端样式并增加交互。
 
@@ -26,6 +26,8 @@
 ## 功能
 
 - **侧栏宽度可调**：默认 60%，支持 50% / 60% / 70% / 100% 预设和 45%–100% 自定义滑杆，设置会记住；
+- **场景预设**：默认、单手、阅读、全屏；一键设置宽度、左右布局、滑动范围和动效；
+- **诊断信息**：复制插件版本、UA、视口、当前设置和最近错误；不含余额、聊天或账号。
 - **左右布局互换**：侧栏可移到右侧，滑动方向同步反转；
 - **滑动范围可调**：20%–80%，调整时显示浅蓝范围提示；
 - **☰ 位置重置**：长按仍可拖动；界面页提供重置按钮，恢复默认位置；
@@ -61,7 +63,7 @@ dsh plugin --profile web add github:yinfenAce/dsh-sidebar-optimization
 或使用 Release 的固定版本 tarball：
 
 ```sh
-dsh plugin --profile web add https://github.com/yinfenAce/dsh-sidebar-optimization/releases/download/v0.3.23/dsh-sidebar-optimization-0.3.23.tgz
+dsh plugin --profile web add https://github.com/yinfenAce/dsh-sidebar-optimization/releases/download/v0.4.0/dsh-sidebar-optimization-0.4.0.tgz
 ```
 
 安装后需要**完全退出 DSHBox 再启动**；只刷新页面不会重新加载客户端插件。

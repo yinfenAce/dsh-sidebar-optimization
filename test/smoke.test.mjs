@@ -78,7 +78,7 @@ test('settings card opens with the plugin title and version', () => {
     for (const child of el.children || []) walk(child);
   })(overlay);
   assert.ok(texts.includes('主页排版设置'));
-  assert.ok(texts.some((t) => /^v0\.3\.\d+$/.test(t)));
+  assert.ok(texts.some((t) => /^v\d+\.\d+\.\d+$/.test(t)));
   const tabs = [];
   (function walk(el) {
     if (el && typeof el.className === 'string' && el.className.split(/\s+/).indexOf('dsh-tweaks-tab') >= 0) tabs.push(el);
@@ -92,6 +92,11 @@ test('settings card opens with the plugin title and version', () => {
   assert.ok(texts.includes('设置备份与恢复'));
   assert.ok(texts.includes('界面动效（含分组切换与展开）'));
   assert.ok(texts.includes('重置 ☰ 位置'));
+  assert.ok(texts.includes('默认'));
+  assert.ok(texts.includes('单手'));
+  assert.ok(texts.includes('阅读'));
+  assert.ok(texts.includes('全屏'));
+  assert.ok(texts.includes('诊断信息'));
   assert.ok(texts.some((t) => t.indexOf('恢复默认会清除') >= 0));
   assert.ok(texts.some((t) => t.indexOf('不会影响') >= 0));
 });

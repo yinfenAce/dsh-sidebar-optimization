@@ -3,7 +3,7 @@
 [![CI](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml/badge.svg)](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml)
 # 侧边栏优化 · dsh-sidebar-optimization
 
-![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · **v0.3.23** · [Changelog](CHANGELOG.md)
+![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · **v0.4.0** · [Changelog](CHANGELOG.md)
 
 Sidebar optimization for [DSHBox](https://github.com/WSK-build/DSHBox) / DeepSeek Harness (DSH).
 
@@ -29,6 +29,8 @@ that plugin; it only overrides a few mobile-specific styles and adds a couple of
 ## What it does
 
 - **Adjustable half-screen sidebar** — default 60% of the viewport. Open the sidebar and tap **「主页排版设置」** above Settings; a card opens with a live preview, 50% / 60% / 70% / 100% presets and a custom 45%–100% slider. The choice is remembered.
+- **Scene presets** — Default / One-hand / Reading / Full-screen; each sets width, side, swipe range and motion at once.
+- **Diagnostics** — copy plugin version, UA, viewport, current settings and last error; no account, balance or chat data.
 - **Tap the blank area to close** — the backdrop is forced visible (the bundled plugin hides it with an
   inline `display:none`), so tapping the right-hand blank strip closes the drawer.
 - **Free single scroll** — panels, the session list and the footer scroll as one column, instead of the
@@ -100,7 +102,7 @@ Then restart DSH (or reload the DSH page) so the client bundle is served.
 Every release also attaches an npm-format tarball, so you can install an exact version without publishing to npm:
 
 ```sh
-dsh plugin --profile web add https://github.com/yinfenAce/dsh-sidebar-optimization/releases/download/v0.3.23/dsh-sidebar-optimization-0.3.23.tgz
+dsh plugin --profile web add https://github.com/yinfenAce/dsh-sidebar-optimization/releases/download/v0.4.0/dsh-sidebar-optimization-0.4.0.tgz
 ```
 
 ## Turn it off

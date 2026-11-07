@@ -45,3 +45,14 @@ test('no user-supplied URL field remains in the client', () => {
   assert.ok(client.includes('https://platform.deepseek.com/usage'));
   assert.ok(client.includes('https://platform.deepseek.com/top_up'));
 });
+test('English translation block contains no external URLs or script payloads', () => {
+  const client = read('lib/client.js');
+  const start = client.indexOf('var EN = {');
+  const end = client.indexOf('\n    };', start);
+  assert.ok(start >= 0 && end > start, 'EN block should exist');
+  const block = client.slice(start, end);
+  assert.ok(!/https?:\/\//i.test(block));
+  assert.ok(!/javascript:/i.test(block));
+  assert.ok(!/<script/i.test(block));
+});
+

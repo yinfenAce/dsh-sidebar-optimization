@@ -1,0 +1,30 @@
+name: Translation improvement
+description: Suggest a clearer English string
+labels: [translation]
+body:
+  - type: input
+    id: current
+    attributes:
+      label: Current English
+    validations:
+      required: true
+  - type: input
+    id: proposed
+    attributes:
+      label: Proposed English
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Where it appears / context
+      description: Card section, button, toast, help text, etc.
+    validations:
+      required: true
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Rules
+      options:
+        - label: No URLs, promotions, or illegal/abusive content
+          required: true

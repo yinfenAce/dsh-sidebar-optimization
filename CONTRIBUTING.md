@@ -18,6 +18,10 @@ Include:
 - Use conventional commit prefixes: `feat:`, `fix:`, `docs:`, `test:`, `chore:`.
 - Avoid force-pushing a branch under review.
 
+## Translations
+
+English copy lives in the `EN` object in `lib/client.js`. See [TRANSLATIONS.md](TRANSLATIONS.md) for rules, glossary and the PR flow.
+
 ## Style
 
 - Prefer small, named functions and guard clauses.

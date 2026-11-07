@@ -16,6 +16,14 @@ that plugin; it only overrides a few mobile-specific styles and adds a couple of
 
 *Real device screenshot (v0.3.13; balance hidden).*
 
+![Balance privacy and warning](docs/screenshots/settings-privacy.jpg)
+
+*Balance privacy and low-balance warning.*
+
+![Manual usage entry](docs/screenshots/settings-manual.jpg)
+
+*Manual usage entry.*
+
 ## What it does
 
 - **Adjustable half-screen sidebar** — default 60% of the viewport. Open the sidebar and tap **「主页排版设置」** above Settings; a card opens with a live preview, 50% / 60% / 70% presets and a custom 45%–80% slider. The choice is remembered.

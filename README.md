@@ -19,6 +19,7 @@ that plugin; it only overrides a few mobile-specific styles and adds a couple of
   during the reflow caused by the on-screen keyboard.
 - **Keyboard follow** — `visualViewport` resizes the root immediately when the keyboard opens/closes,
   instead of waiting for `100dvh` to be recalculated.
+- **Adjustable swipe zone** — 20–80% of the screen from the active edge, with a flashing light-blue guide while you adjust it; the guide stays under the settings card.
 - **Swipe gestures (experimental)** — swipe right from the left third of the screen (chat, plugins, task board or any other page) to open; swipe left to close. If it does not trigger on your device, the ☰ button still works; it can be turned off in the settings card.
 - **Session tap closes the drawer** — after selecting a session, the drawer collapses automatically
   (unless DSH already closed it).

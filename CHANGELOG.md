@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.1 — 2026-11-07
+
+- Swipe detection range is now adjustable from 20% to 80% (default 33%).
+- While dragging the range slider, a flashing light-blue guide shows the active zone in real time; it sits below the settings card so the card stays readable.
+
 ## 0.2.0 — 2026-11-07
 
 - Left/right layout swap: sidebar to the right, right panel to the left.

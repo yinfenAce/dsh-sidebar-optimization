@@ -3,7 +3,7 @@
 [English](README.md) | **中文**
 
 [![CI](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml/badge.svg)](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml)
-![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · **v0.8.0** · [更新记录](CHANGELOG.md)
+![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · **v0.8.1** · [更新记录](CHANGELOG.md)
 
 面向 [DSHBox](https://github.com/WSK-build/DSHBox) / DeepSeek Harness 的移动端侧边栏优化插件。它是纯客户端插件，不替换内置的 `@local/dsh-mobile-adapt`，只覆盖部分移动端样式并增加交互。
 
@@ -15,7 +15,7 @@
 
 ![设置卡片](docs/screenshots/settings-real.jpg)
 
-*实机截图（v0.7.6；v0.8.0 设置界面不变）：场景预设、实时宽度预览与强调色。*
+*实机截图（v0.7.6）：场景预设、实时宽度预览与强调色。*
 
 ![余额隐私与预警](docs/screenshots/settings-privacy.jpg)
 
@@ -45,7 +45,6 @@
 - **左右布局互换**：侧栏可移到右侧，滑动方向同步反转；
 - **滑动范围可调**：20%–80%，调整时显示当前强调色的范围提示（默认淡白）；
 - **☰ 位置重置**：长按仍可拖动；界面页提供重置按钮，恢复默认位置；
-- **双击 ☰ 快捷面板**：新建会话、查看用量、刷新余额、打开设置；单击仍开关侧栏，长按仍拖动；
 - **界面动效开关**：分组切换、隐私/预警联动行也带过渡；关闭后卡片、提示、范围提示、菜单、分组和视图切换立即完成；
 - **低额预警红点**：余额低于阈值时，侧栏「主页排版设置」行显示红点；记住上次低额状态，打开侧栏立即显示，不显示金额。
 - **点击空白关闭**：点击右侧空白区域收起侧栏；
@@ -78,7 +77,7 @@ dsh plugin --profile web add github:yinfenAce/dsh-sidebar-optimization
 或使用 Release 的固定版本 tarball：
 
 ```sh
-dsh plugin --profile web add https://github.com/yinfenAce/dsh-sidebar-optimization/releases/download/v0.8.0/dsh-sidebar-optimization-0.8.0.tgz
+dsh plugin --profile web add https://github.com/yinfenAce/dsh-sidebar-optimization/releases/download/v0.8.1/dsh-sidebar-optimization-0.8.1.tgz
 ```
 
 安装后需要**完全退出 DSHBox 再启动**；只刷新页面不会重新加载客户端插件。

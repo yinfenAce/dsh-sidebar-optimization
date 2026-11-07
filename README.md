@@ -3,7 +3,7 @@
 [![CI](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml/badge.svg)](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml)
 # 侧边栏优化 · dsh-sidebar-optimization
 
-![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · **v0.3.14** · [Changelog](CHANGELOG.md)
+![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · **v0.3.15** · [Changelog](CHANGELOG.md)
 
 Sidebar optimization for [DSHBox](https://github.com/WSK-build/DSHBox) / DeepSeek Harness (DSH).
 
@@ -23,6 +23,8 @@ that plugin; it only overrides a few mobile-specific styles and adds a couple of
 ![Manual usage entry](docs/screenshots/settings-manual.jpg)
 
 *Manual usage entry.*
+
+> The screenshots were captured on **v0.3.13**. Later releases only add features and grouped layout, so the images are kept temporarily. The current UI is grouped into three collapsible sections; use the latest Release for exact layout.
 
 ## What it does
 
@@ -48,6 +50,7 @@ that plugin; it only overrides a few mobile-specific styles and adds a couple of
 - **Left/right layout swap** — move the sidebar to the right and the right panel to the left; the swipe direction reverses with it (right third, swipe left to open).
 - **Draggable ☰ button** — long-press the ☰ and drag it; on release it snaps to the nearest side, and the position is remembered.
 - **Hide the DeepSeek brand mark** — optional toggle in the settings card; the collapse control stays in place.
+- **Grouped settings card** — sections for layout/gestures, display/balance, and usage; the usage section starts collapsed.
 - **Scrollable settings card** — the card stays centered; its content scrolls when the viewport is short.
 - **No blue focus ring on tap** — touch interactions no longer leave a square focus outline; keyboard focus rings are preserved.
 - **Copy that actually works** — a textarea/`execCommand` fallback backs the Clipboard API, and every code block gets a visible “复制” button.
@@ -92,7 +95,7 @@ Then restart DSH (or reload the DSH page) so the client bundle is served.
 Every release also attaches an npm-format tarball, so you can install an exact version without publishing to npm:
 
 ```sh
-dsh plugin --profile web add https://github.com/yinfenAce/dsh-sidebar-optimization/releases/download/v0.3.14/dsh-sidebar-optimization-0.3.14.tgz
+dsh plugin --profile web add https://github.com/yinfenAce/dsh-sidebar-optimization/releases/download/v0.3.15/dsh-sidebar-optimization-0.3.15.tgz
 ```
 
 ## Turn it off

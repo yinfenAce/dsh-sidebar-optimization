@@ -79,4 +79,13 @@ test('settings card opens with the plugin title and version', () => {
   })(overlay);
   assert.ok(texts.includes('主页排版设置'));
   assert.ok(texts.some((t) => /^v0\.3\.\d+$/.test(t)));
+  const groups = [];
+  (function walk(el) {
+    if (el && el.className === 'dsh-tweaks-group') groups.push(el);
+    for (const child of (el && el.children) || []) walk(child);
+  })(overlay);
+  assert.equal(groups.length, 3);
+  assert.equal(groups[0].open, true);
+  assert.equal(groups[1].open, true);
+  assert.ok(!groups[2].open);
 });

@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.10 — 2026-11-07
+
+- Manual-entry instructions rewritten in formal, numbered steps; the detailed guide is collapsed by default, with a one-line operation order above the fields.
+- Status wording: 扫描完成/失败、验证成功/失败、保存成功/失败; red/green feedback remains.
+- Section title changed to 「填写说明与匹配顺序」.
+
 ## 0.3.9 — 2026-11-07
 
 - Scanner filters out the balance amount, conversation/system tabs (`对话`, `轨迹`), command/thinking cards, session rows, and the plugin's own UI; only plugin navigation/tab labels remain.

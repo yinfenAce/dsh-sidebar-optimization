@@ -1,13 +1,13 @@
-# 主页排版设置 · dsh-mobile-tweaks
+# 侧边栏优化 · dsh-mobile-tweaks
 
-Mobile drawer tweaks for [DSHBox](https://github.com/WSK-build/DSHBox) / DeepSeek Harness (DSH).
+Sidebar optimization for [DSHBox](https://github.com/WSK-build/DSHBox) / DeepSeek Harness (DSH).
 
 A small, client-only layer on top of the bundled `@local/dsh-mobile-adapt` plugin. It does not replace
 that plugin; it only overrides a few mobile-specific styles and adds a couple of interactions.
 
 ## What it does
 
-- **Adjustable half-screen sidebar** — default 60% of the viewport. Open the sidebar and tap **「主页排版设置」** above Settings; a card opens with a live preview, 50% / 60% / 70% presets and a custom 45%–80% slider. The choice is remembered.
+- **Adjustable half-screen sidebar** — default 60% of the viewport. Open the sidebar and tap **「侧边栏优化」** above Settings; a card opens with a live preview, 50% / 60% / 70% presets and a custom 45%–80% slider. The choice is remembered.
 - **Tap the blank area to close** — the backdrop is forced visible (the bundled plugin hides it with an
   inline `display:none`), so tapping the right-hand blank strip closes the drawer.
 - **Free single scroll** — panels, the session list and the footer scroll as one column, instead of the

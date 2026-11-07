@@ -1,7 +1,7 @@
 {
   "name": "dsh-mobile-tweaks",
   "version": "0.1.0",
-  "description": "Mobile drawer tweaks for DSHBox / DeepSeek Harness: 58% half-screen sidebar, tap-outside close, free scroll, long-chat performance and keyboard follow.",
+  "description": "Sidebar optimization for DSHBox / DeepSeek Harness: adjustable 45-80% sidebar, settings card with live preview, copy fixes, view-switch animation.",
   "license": "MIT",
   "type": "commonjs",
   "main": "lib/index.js",

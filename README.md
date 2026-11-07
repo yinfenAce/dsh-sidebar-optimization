@@ -21,7 +21,7 @@ that plugin; it only overrides a few mobile-specific styles and adds a couple of
 - **Session tap closes the drawer** — after selecting a session, the drawer collapses automatically
   (unless DSH already closed it).
 - **Open reveals the active session** — opening the drawer scrolls the current session into view.
-- **Live account balance (optional)** — refreshed whenever the drawer opens. It is shown only when the DeepSeek mark is hidden; with the mark hidden and balance off, nothing is shown. It takes the brand's place in a larger font.
+- **Live account balance (optional)** — refreshed whenever the drawer opens, formatted to two decimals. It is shown only when the DeepSeek mark is hidden; with the mark hidden and balance off, nothing is shown. A 2–4 character custom label can be saved in the card (restart DSH to apply).
 - **Draggable ☰ button** — long-press the ☰ and drag it; on release it snaps to the nearest side, and the position is remembered.
 - **Hide the DeepSeek brand mark** — optional toggle in the settings card; the collapse control stays in place.
 - **Scrollable settings card** — the card stays centered; its content scrolls when the viewport is short.

@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.1 — 2026-11-07
+
+- Broaden the declared compatibility: DSH `0.2.x` (>=0.2.0-rc.2 <0.3.0), DSHBox 1.4+/1.5.x, Android 10+.
+- README now separates the **declared** range from the **tested** combination (DSHBox 1.5.1 / DSH 0.2.1-rc.5 / Android 14).
+
 ## 0.1.0 — 2026-11-07
 
 首个公开版本。

@@ -32,11 +32,14 @@ that plugin; it only overrides a few mobile-specific styles and adds a couple of
 - **View-switch transition** — switching the top view/trajectory tab fades and lifts the new content in instead of snapping.
 - **Touch polish** — 42px panel rows, vertical-only panning inside the drawer, safe-area bottom padding.
 
-## Requirements
+## Compatibility
 
-- DSHBox **v1.5.1** (the bundled `@local/dsh-mobile-adapt` plugin must be enabled).
-- DSH **0.2.1-rc.5** (declared compatible; the upstream plugin's DOM classes are version-sensitive).
-- Viewport width ≤ 1024px (phone/tablet). Desktop layouts are untouched.
+- **DSHBox**: designed for **1.4+ / 1.5.x** with the bundled `@local/dsh-mobile-adapt` plugin enabled; tested on **1.5.1**.
+- **DSH**: declared `>=0.2.0-rc.2 <0.3.0` (`0.2.x`); tested on **0.2.1-rc.5**. 0.2.0 and 0.2.2 are expected to work.
+- **Android**: **10+** with a current WebView; tested on **Android 14** (system WebView).
+- **Viewport**: ≤ 1024px (phone/tablet). Desktop layouts are untouched.
+
+The tweaks target the generic sidebar classes (`sidebarCol`, `logoRow`, `footArea`, `viewArea`, `data-chat-turn`), so other combinations are expected to work. They are not individually tested; if a DSHBox update changes the drawer DOM, some rules may stop applying — open an issue with your version and a screenshot.
 
 ## Install
 

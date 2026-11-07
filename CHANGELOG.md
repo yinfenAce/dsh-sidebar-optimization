@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.3 — 2026-11-07
+
+- Auto usage-plugin matching now includes the localized plugin title and Chinese keywords `用量` / `上下文`, so newly added usage plugins are detected more often.
+- The manual 「用量入口文字」 field accepts multiple candidates separated by `,` / `|` / `，`; it is used only when auto detection fails.
+- Context matching has a safe prefix fallback for visible tabs and sidebar entries, so a badge/suffix does not break the jump.
+- Draggable ☰ snap animation: both left and right snaps now animate via `left` pixels instead of `left → auto`/`right`, fixing the right-side teleport.
+
 ## 0.3.2 — 2026-11-07
 
 - Fix: the v0.3.1 fast path could click an unrelated 「上下文」 element and then close the drawer with no jump.

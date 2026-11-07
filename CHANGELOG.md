@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.9 — 2026-11-07
+
+- Scanner filters out the balance amount, conversation/system tabs (`对话`, `轨迹`), command/thinking cards, session rows, and the plugin's own UI; only plugin navigation/tab labels remain.
+- Test and save now show a colored status line: green on success, red on failure/not found. Save also verifies that the entry currently exists.
+- Selecting a scan result shows a clear status; saving a label that is not currently found warns instead of silently falling back.
+
 ## 0.3.8 — 2026-11-07
 
 - Scan results are now a visible list of tappable labels instead of a native select with a blank placeholder.

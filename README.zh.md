@@ -3,9 +3,13 @@
 [English](README.md) | **中文**
 
 [![CI](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml/badge.svg)](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml)
-![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · **v0.6.5** · [更新记录](CHANGELOG.md)
+![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · **v0.7.0** · [更新记录](CHANGELOG.md)
 
 面向 [DSHBox](https://github.com/WSK-build/DSHBox) / DeepSeek Harness 的移动端侧边栏优化插件。它是纯客户端插件，不替换内置的 `@local/dsh-mobile-adapt`，只覆盖部分移动端样式并增加交互。
+
+## 界面语言
+
+设置卡片默认跟随系统语言；可在「通用」里切换 **自动 / 中文 / English**。
 
 ## 截图
 
@@ -66,7 +70,7 @@ dsh plugin --profile web add github:yinfenAce/dsh-sidebar-optimization
 或使用 Release 的固定版本 tarball：
 
 ```sh
-dsh plugin --profile web add https://github.com/yinfenAce/dsh-sidebar-optimization/releases/download/v0.6.5/dsh-sidebar-optimization-0.6.5.tgz
+dsh plugin --profile web add https://github.com/yinfenAce/dsh-sidebar-optimization/releases/download/v0.7.0/dsh-sidebar-optimization-0.7.0.tgz
 ```
 
 安装后需要**完全退出 DSHBox 再启动**；只刷新页面不会重新加载客户端插件。

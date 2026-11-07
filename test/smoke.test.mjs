@@ -97,6 +97,7 @@ test('settings card opens with the plugin title and version', () => {
   assert.ok(texts.includes('阅读'));
   assert.ok(texts.includes('全屏'));
   assert.ok(texts.includes('诊断信息'));
+  assert.ok(texts.includes('界面语言'));
   assert.ok(texts.includes('阅读密度（字号 / 行高 / 间距）'));
   assert.ok(texts.includes('余额币种'));
   assert.ok(texts.includes('强调色'));

@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.0 — 2026-11-07
+
+- Generic usage entry: a new 「用量入口文字」 setting lets the user type the sidebar/tab label of any usage plugin (e.g. `上下文`, `用量`); the balance menu clicks that entry directly.
+- Leave it empty to keep automatic detection by bundle id/title; if the custom entry is not found, usage falls back to the platform page.
+- This covers plugins that do not match the built-in `context` / `usage` / `token-*` names.
+
 ## 0.2.9 — 2026-11-07
 
 - Generic feature-entry adaptation: for an enabled usage/context plugin, find its sidebar or conversation-view tab by the plugin's localized `meta.title` (or label) and click it, instead of opening the bundle config page.

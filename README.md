@@ -39,7 +39,7 @@ that plugin; it only overrides a few mobile-specific styles and adds a couple of
 
 The balance menu looks for an enabled bundle whose id/name matches `context`, `usage`, `token-usage` or `token-meter`, then opens that plugin's **feature entry** (the sidebar item or conversation-view tab whose text matches the plugin's title). It does not open the bundle's configuration page.
 
-To add a plugin that is not auto-detected, add its bundle id and a short navigation label to `USAGE_BUNDLES` in `lib/client.js`. If the plugin has no feature entry (only a settings page), the usage action falls back to `https://platform.deepseek.com/usage`.
+To add a plugin that is not auto-detected, either type its sidebar/tab label into 「用量入口文字」 in the settings card, or add its bundle id and a short navigation label to `USAGE_BUNDLES` in `lib/client.js`. If the plugin has no feature entry (only a settings page), the usage action falls back to `https://platform.deepseek.com/usage`.
 
 ## Compatibility
 

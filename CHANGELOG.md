@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.6 — 2026-11-07
+
+- Menu subtitle changed to 「第三方插件 / 平台用量」.
+- Generic usage-plugin detection: any enabled plugin whose id/name matches `context`, `usage`, `token-usage` or `token-meter` is considered; `dsh-context` still preferred.
+- Bundle enablement is authoritative: a disabled bundle falls back to the platform page even if its individual loader entry looks enabled.
+- The plugin's own id and mobile-adapt are excluded from the match.
+
 ## 0.2.5 — 2026-11-07
 
 - 「查看用量」 now checks the plugin manager for **installed + enabled** usage plugins instead of only looking for a sidebar entry.

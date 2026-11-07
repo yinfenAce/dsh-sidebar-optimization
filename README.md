@@ -3,7 +3,7 @@
 [![CI](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml/badge.svg)](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml)
 # 侧边栏优化 · dsh-sidebar-optimization
 
-![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · **v0.7.5** · [Changelog](CHANGELOG.md)
+![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · **v0.7.6** · [Changelog](CHANGELOG.md)
 
 Sidebar optimization for [DSHBox](https://github.com/WSK-build/DSHBox) / DeepSeek Harness (DSH).
 
@@ -109,7 +109,7 @@ Then restart DSH (or reload the DSH page) so the client bundle is served.
 Every release also attaches an npm-format tarball, so you can install an exact version without publishing to npm:
 
 ```sh
-dsh plugin --profile web add https://github.com/yinfenAce/dsh-sidebar-optimization/releases/download/v0.7.5/dsh-sidebar-optimization-0.7.5.tgz
+dsh plugin --profile web add https://github.com/yinfenAce/dsh-sidebar-optimization/releases/download/v0.7.6/dsh-sidebar-optimization-0.7.6.tgz
 ```
 
 ## Turn it off

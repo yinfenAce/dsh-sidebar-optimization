@@ -1,0 +1,52 @@
+{
+  "name": "dsh-mobile-tweaks",
+  "version": "0.1.0",
+  "description": "Mobile drawer tweaks for DSHBox / DeepSeek Harness: 58% half-screen sidebar, tap-outside close, free scroll, long-chat performance and keyboard follow.",
+  "license": "MIT",
+  "type": "commonjs",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yinfenAce/dsh-mobile-tweaks.git"
+  },
+  "homepage": "https://github.com/yinfenAce/dsh-mobile-tweaks",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "mobile",
+    "sidebar",
+    "dshbox"
+  ],
+  "engines": {
+    "dsh": ">=0.2.1-rc.3 <0.2.2"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout"
+      ],
+      "platform": "web"
+    },
+    "compatibility": {
+      "dshReleases": {
+        "0.2.1-rc.5": "compatible"
+      }
+    }
+  }
+}

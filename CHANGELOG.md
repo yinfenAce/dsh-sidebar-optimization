@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.1 — 2026-11-07
+
+- Faster usage jump: if the Context feature tab/sidebar entry is already present, click it immediately instead of waiting for the plugin-manager query.
+- Plugin-manager usage state is cached for 60s and warmed on load/menu open; non-context plugins no longer query on every tap.
+- Drawer close after the jump is 80ms instead of 280ms.
+
 ## 0.3.0 — 2026-11-07
 
 - Generic usage entry: a new 「用量入口文字」 setting lets the user type the sidebar/tab label of any usage plugin (e.g. `上下文`, `用量`); the balance menu clicks that entry directly.

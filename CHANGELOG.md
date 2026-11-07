@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.5 — 2026-11-07
+
+- 「查看用量」 now checks the plugin manager for **installed + enabled** usage plugins instead of only looking for a sidebar entry.
+- Candidates: `dsh-context`, `dsh-usage`, `dsh-token-usage`, `dsh-token-meter`.
+- If the matched plugin is disabled or absent, it opens `https://platform.deepseek.com/usage`.
+- Opening a non-context usage plugin uses its own bundle id, not a hardcoded `dsh-context`.
+
 ## 0.2.4 — 2026-11-07
 
 - 「查看用量」 now falls back to `https://platform.deepseek.com/usage` when the `dsh-context` plugin is not installed, instead of a disabled item.

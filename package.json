@@ -1,6 +1,6 @@
 {
   "name": "dsh-sidebar-optimization",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Sidebar optimization for DSHBox / DeepSeek Harness: adjustable 45-80% sidebar, a settings card with live preview, copy fixes, view-switch animation.",
   "license": "MIT",
   "type": "commonjs",

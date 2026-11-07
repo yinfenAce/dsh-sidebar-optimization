@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.2 — 2026-11-07
+
+- Fix: remove the drawer/backdrop `z-index` override that covered sidebar popovers. The workspace filter/sliders button and the settings dialog now open normally.
+- Trade-off: the drawer no longer forces itself above plugin dialogs; the normal mobile-adapt layer order is restored.
+
 ## 0.2.1 — 2026-11-07
 
 - Swipe detection range is now adjustable from 20% to 80% (default 33%).

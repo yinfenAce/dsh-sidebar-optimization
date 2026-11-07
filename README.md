@@ -17,10 +17,11 @@ that plugin; it only overrides a few mobile-specific styles and adds a couple of
   during the reflow caused by the on-screen keyboard.
 - **Keyboard follow** — `visualViewport` resizes the root immediately when the keyboard opens/closes,
   instead of waiting for `100dvh` to be recalculated.
-- **Swipe gestures (experimental)** — swipe right anywhere on the chat to open, swipe left to close. If it does not trigger on your device, the ☰ button still works; it can be turned off in the settings card.
+- **Swipe gestures (experimental)** — swipe right from the left third of the screen (chat, plugins, task board or any other page) to open; swipe left to close. If it does not trigger on your device, the ☰ button still works; it can be turned off in the settings card.
 - **Session tap closes the drawer** — after selecting a session, the drawer collapses automatically
   (unless DSH already closed it).
 - **Open reveals the active session** — opening the drawer scrolls the current session into view.
+- **Live account balance** — shown under the DeepSeek mark and refreshed whenever the drawer opens; if the mark is hidden, the balance takes its place in a larger font.
 - **Hide the DeepSeek brand mark** — optional toggle in the settings card; the collapse control stays in place.
 - **Scrollable settings card** — the card stays centered; its content scrolls when the viewport is short.
 - **No blue focus ring on tap** — touch interactions no longer leave a square focus outline; keyboard focus rings are preserved.

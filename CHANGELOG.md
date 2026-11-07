@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.8 — 2026-11-07
+
+- Fix: Context opened the plugin **configuration** page instead of its feature view.
+- The jump now finds the `上下文` / `上下文洞察` conversation-view tab or sidebar entry (the context plugin's `tab.context` label is 「上下文」).
+- For `dsh-context`, `pluginNavigation.openBundle` is no longer used as a fallback because it opens the config page; if no tab/entry is found, usage falls back to the platform page.
+
 ## 0.2.7 — 2026-11-07
 
 - Fix: `dsh-context` enabled but not detected. Usage-plugin matching now reads `entryId`/`moduleName` from `pluginManager/listPlugins`; bundle and plugin-manager calls fall back to the host RPC when the client remote namespace is absent.

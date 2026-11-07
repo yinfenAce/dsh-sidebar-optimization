@@ -3,7 +3,7 @@
 [English](README.md) | **中文**
 
 [![CI](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml/badge.svg)](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml)
-![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · **v0.6.2** · [更新记录](CHANGELOG.md)
+![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · **v0.6.3** · [更新记录](CHANGELOG.md)
 
 面向 [DSHBox](https://github.com/WSK-build/DSHBox) / DeepSeek Harness 的移动端侧边栏优化插件。它是纯客户端插件，不替换内置的 `@local/dsh-mobile-adapt`，只覆盖部分移动端样式并增加交互。
 
@@ -28,8 +28,8 @@
 - **侧栏宽度可调**：默认 60%，支持 50% / 60% / 70% / 100% 预设和 45%–100% 自定义滑杆，设置会记住；
 - **场景预设**：默认、单手、阅读、全屏；一键设置宽度、左右布局、滑动范围和动效；
 - **阅读密度**：正文字号 13–20px、行高 1.3–2.0、消息间距 0–24px；「阅读」场景会自动启用 16px / 1.8 / 12px。
-- **强调色**：默认、红、橙、黄、绿、蓝、紫，更多颜色可展开；影响插件标签、开关、滑杆和主按钮；
-- **余额币种**：自动 / CNY / USD；自动优先 CNY，不存在时回退第一个钱包。
+- **强调色**：默认、红、橙、黄、绿、蓝、紫，更多过渡色可展开；影响插件标签、开关、滑杆和主按钮；
+- **余额币种**：自动 / CNY / USD；仅在账户有多个钱包时显示，自动优先 CNY，不存在时回退第一个。
 - **诊断信息**：复制插件版本、UA、视口、当前设置和最近错误；不含余额、聊天或账号。
 - **左右布局互换**：侧栏可移到右侧，滑动方向同步反转；
 - **滑动范围可调**：20%–80%，调整时显示浅蓝范围提示；
@@ -66,7 +66,7 @@ dsh plugin --profile web add github:yinfenAce/dsh-sidebar-optimization
 或使用 Release 的固定版本 tarball：
 
 ```sh
-dsh plugin --profile web add https://github.com/yinfenAce/dsh-sidebar-optimization/releases/download/v0.6.2/dsh-sidebar-optimization-0.6.2.tgz
+dsh plugin --profile web add https://github.com/yinfenAce/dsh-sidebar-optimization/releases/download/v0.6.3/dsh-sidebar-optimization-0.6.3.tgz
 ```
 
 安装后需要**完全退出 DSHBox 再启动**；只刷新页面不会重新加载客户端插件。

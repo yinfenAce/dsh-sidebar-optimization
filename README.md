@@ -54,6 +54,14 @@ dsh plugin --profile web add github:yinfenAce/dsh-sidebar-optimization
 
 Then restart DSH (or reload the DSH page) so the client bundle is served.
 
+## Install a pinned version
+
+Every release also attaches an npm-format tarball, so you can install an exact version without publishing to npm:
+
+```sh
+dsh plugin --profile web add https://github.com/yinfenAce/dsh-sidebar-optimization/releases/download/v0.1.0/dsh-sidebar-optimization-0.1.0.tgz
+```
+
 ## Turn it off
 
 The tweaks follow the **Mobile adaptation** switch in DSHBox: when `@local/dsh-mobile-adapt` is turned

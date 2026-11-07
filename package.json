@@ -1,6 +1,6 @@
 {
   "name": "dsh-sidebar-optimization",
-  "version": "0.6.3",
+  "version": "0.6.4",
   "description": "DSHBox 移动端侧边栏增强：场景预设、阅读密度、强调色、多币种余额、设置备份与诊断。",
   "license": "MIT",
   "type": "commonjs",

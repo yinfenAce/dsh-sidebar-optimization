@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.7 — 2026-11-07
+
+- Scanner now only lists navigation entries (sidebar + header/view tabs), not conversation command/tool cards.
+- Manual form layout: scan/test/save buttons have proper spacing; the full tutorial is open by default.
+- Priority is explicit: manual entry > auto-detected enabled plugin > platform usage page.
+- Manual failures fall through to auto detection instead of jumping straight to the platform page.
+
 ## 0.3.6 — 2026-11-07
 
 - Manual entry guidance: 「扫描当前入口」 lists visible sidebar/tab labels, 「测试入口」 highlights the matched target without navigating.

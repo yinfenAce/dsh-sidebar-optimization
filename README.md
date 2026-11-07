@@ -35,6 +35,12 @@ that plugin; it only overrides a few mobile-specific styles and adds a couple of
 - **View-switch transition** — switching the top view/trajectory tab fades and lifts the new content in instead of snapping.
 - **Touch polish** — 42px panel rows, vertical-only panning inside the drawer, safe-area bottom padding.
 
+## Adapting another usage plugin
+
+The balance menu looks for an enabled bundle whose id/name matches `context`, `usage`, `token-usage` or `token-meter`, then opens that plugin's **feature entry** (the sidebar item or conversation-view tab whose text matches the plugin's title). It does not open the bundle's configuration page.
+
+To add a plugin that is not auto-detected, add its bundle id and a short navigation label to `USAGE_BUNDLES` in `lib/client.js`. If the plugin has no feature entry (only a settings page), the usage action falls back to `https://platform.deepseek.com/usage`.
+
 ## Compatibility
 
 - **DSHBox**: designed for **1.4+ / 1.5.x** with the bundled `@local/dsh-mobile-adapt` plugin enabled; tested on **1.5.1**.

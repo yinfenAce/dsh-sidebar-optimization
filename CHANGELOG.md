@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.9 — 2026-11-07
+
+- Generic feature-entry adaptation: for an enabled usage/context plugin, find its sidebar or conversation-view tab by the plugin's localized `meta.title` (or label) and click it, instead of opening the bundle config page.
+- `pluginNavigation.openBundle` is no longer used as a usage fallback; if no feature entry is found, usage falls back to the platform page.
+- New plugins can be adapted by adding their bundle id/label to `USAGE_BUNDLES`, or by registering a sidebar/tab entry whose text matches the plugin title.
+
 ## 0.2.8 — 2026-11-07
 
 - Fix: Context opened the plugin **configuration** page instead of its feature view.

@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.4 — 2026-11-07
+
+- 「查看用量」 now falls back to `https://platform.deepseek.com/usage` when the `dsh-context` plugin is not installed, instead of a disabled item.
+- When `dsh-context` is installed, the same entry still opens the Context panel.
+
 ## 0.2.3 — 2026-11-07
 
 - Balance quick actions: tap only the amount (not the label or colon) to open a small menu.

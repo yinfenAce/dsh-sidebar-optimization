@@ -55,4 +55,13 @@ test('English translation block contains no external URLs or script payloads', (
   assert.ok(!/javascript:/i.test(block));
   assert.ok(!/<script/i.test(block));
 });
+test('accent and reading prefs are applied after their tables are defined', () => {
+  const client = read('lib/client.js');
+  const accents = client.indexOf('var ACCENTS =');
+  const accentCall = client.indexOf('applyAccentPref();');
+  assert.ok(accents > 0 && accentCall > accents);
+  const readDefaults = client.indexOf('var READ_DEFAULTS =');
+  const readCall = client.indexOf('applyReadDensity();');
+  assert.ok(readDefaults > 0 && readCall > readDefaults);
+});
 

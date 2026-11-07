@@ -18,17 +18,24 @@ The settings card follows the system language by default. Switch between **Auto 
 
 ![Settings card](docs/screenshots/settings-real.jpg)
 
-*Real device screenshot (v0.3.13; v0.3.14 adds balance refresh and auto-remask).*
+*Real device screenshot on v0.7.6: scene presets, live width preview and accent color.*
 
 ![Balance privacy and warning](docs/screenshots/settings-privacy.jpg)
 
-*Balance privacy and low-balance warning.*
+*Balance privacy, auto-hide and low-balance warning.*
+
+![General settings](docs/screenshots/settings-general.jpg)
+
+*Language, backup, diagnostics and manual entry controls.*
 
 ![Manual usage entry](docs/screenshots/settings-manual.jpg)
 
 *Manual usage entry.*
 
-> The screenshots were captured on **v0.3.13**. Later releases add features and a tabbed layout, so the images are kept temporarily. The current UI uses three top tabs — Interface, Display, General — and the width can now reach 100%.
+![English UI](docs/screenshots/settings-en.jpg)
+
+*English UI.*
+
 
 ## What it does
 

@@ -15,17 +15,24 @@
 
 ![设置卡片](docs/screenshots/settings-real.jpg)
 
-*实机截图（v0.3.13；0.3.14 增加余额刷新与自动恢复星号）。*
+*实机截图（v0.7.6）：场景预设、实时宽度预览与强调色。*
 
 ![余额隐私与预警](docs/screenshots/settings-privacy.jpg)
 
-*余额隐私与低额预警。*
+*余额隐私、自动隐藏与低额预警。*
+
+![通用设置](docs/screenshots/settings-general.jpg)
+
+*界面语言、设置备份、诊断与手动入口。*
 
 ![手动用量入口](docs/screenshots/settings-manual.jpg)
 
 *手动用量入口。*
 
-> 截图摄于 **v0.3.13**。后续版本只做增量修改和分类标签，暂未重拍；当前界面改为「界面 / 显示 / 通用」三个顶部标签，宽度上限提升到 100%；具体以最新 Release 为准。
+![英文界面](docs/screenshots/settings-en.jpg)
+
+*英文界面。*
+
 
 ## 功能
 

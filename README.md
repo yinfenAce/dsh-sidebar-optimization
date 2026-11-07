@@ -1,3 +1,4 @@
+[![CI](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml/badge.svg)](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml)
 # 侧边栏优化 · dsh-sidebar-optimization
 
 ![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · **v0.3.13** · [Changelog](CHANGELOG.md)

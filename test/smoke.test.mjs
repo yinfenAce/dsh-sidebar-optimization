@@ -18,7 +18,7 @@ function makeEl() {
     setAttribute() {}, getAttribute() { return null; },
     querySelector() { return null; }, querySelectorAll() { return []; },
     getBoundingClientRect() { return { left: 0, top: 0, width: 200, height: 34, bottom: 34 }; },
-    textContent: '', value: '', checked: false, type: '', id: '', className: '', innerHTML: '',
+    textContent: '', value: '', checked: false, type: '', id: '', className: '', innerHTML: '', dataset: {},
     nextSibling: null, firstChild: null,
   };
   return el;

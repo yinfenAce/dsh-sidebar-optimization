@@ -90,4 +90,6 @@ test('settings card opens with the plugin title and version', () => {
   assert.ok(texts.includes('100%'));
   assert.ok(texts.includes('显示后自动隐藏（秒）'));
   assert.ok(texts.includes('设置备份与恢复'));
+  assert.ok(texts.some((t) => t.indexOf('恢复默认会清除') >= 0));
+  assert.ok(texts.some((t) => t.indexOf('不会影响') >= 0));
 });

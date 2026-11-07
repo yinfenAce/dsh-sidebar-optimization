@@ -3,7 +3,7 @@
 [English](README.md) | **中文**
 
 [![CI](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml/badge.svg)](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml)
-![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · **v0.3.18** · [更新记录](CHANGELOG.md)
+![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · **v0.3.19** · [更新记录](CHANGELOG.md)
 
 面向 [DSHBox](https://github.com/WSK-build/DSHBox) / DeepSeek Harness 的移动端侧边栏优化插件。它是纯客户端插件，不替换内置的 `@local/dsh-mobile-adapt`，只覆盖部分移动端样式并增加交互。
 
@@ -42,7 +42,7 @@
 - **余额预警**：开启后显示阈值设置，默认 ¥1；余额小于等于阈值时数字变红，阈值可自定义（≥0）；
 - **自动隐藏倒计时**：隐私开启时，展开余额后 5–600 秒自动恢复 `****`，默认 30 秒；
 - **阈值快捷值**：1 / 5 / 10 元一键设置；
-- **设置备份**：复制当前设置、从文本恢复、恢复默认设置；只操作本插件键，恢复后页面重载。
+- **设置备份**：复制当前设置、从文本恢复、恢复默认设置；重置会清除宽度、布局、滑动/手势、标识隐藏、余额/隐私/预警、自动隐藏、标签、手动入口和 ☰ 位置，不影响 DSH 账号、余额数据、聊天记录和其他插件；恢复后页面重载。
 - **用量入口**：优先手动入口，其次自动识别已启用的用量/上下文插件，最后打开官方平台用量页；
 - **顶部分类标签**：界面、显示、通用；默认第一个，点击切换对应内容；
 - **设置卡片可滚动**：屏幕较矮时内容可滚动，不遮挡操作。
@@ -58,7 +58,7 @@ dsh plugin --profile web add github:yinfenAce/dsh-sidebar-optimization
 或使用 Release 的固定版本 tarball：
 
 ```sh
-dsh plugin --profile web add https://github.com/yinfenAce/dsh-sidebar-optimization/releases/download/v0.3.18/dsh-sidebar-optimization-0.3.18.tgz
+dsh plugin --profile web add https://github.com/yinfenAce/dsh-sidebar-optimization/releases/download/v0.3.19/dsh-sidebar-optimization-0.3.19.tgz
 ```
 
 安装后需要**完全退出 DSHBox 再启动**；只刷新页面不会重新加载客户端插件。

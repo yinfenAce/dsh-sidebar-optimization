@@ -1,6 +1,6 @@
 # 侧边栏优化 · dsh-sidebar-optimization
 
-![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · **v0.1.0** · [Changelog](CHANGELOG.md)
+![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · **v0.3.13** · [Changelog](CHANGELOG.md)
 
 Sidebar optimization for [DSHBox](https://github.com/WSK-build/DSHBox) / DeepSeek Harness (DSH).
 
@@ -66,12 +66,14 @@ dsh plugin --profile web add github:yinfenAce/dsh-sidebar-optimization
 
 Then restart DSH (or reload the DSH page) so the client bundle is served.
 
+> Historical releases are hidden from the public release page. Install the latest release or `main`; do not use older tarballs.
+
 ## Install a pinned version
 
 Every release also attaches an npm-format tarball, so you can install an exact version without publishing to npm:
 
 ```sh
-dsh plugin --profile web add https://github.com/yinfenAce/dsh-sidebar-optimization/releases/download/v0.1.0/dsh-sidebar-optimization-0.1.0.tgz
+dsh plugin --profile web add https://github.com/yinfenAce/dsh-sidebar-optimization/releases/download/v0.3.13/dsh-sidebar-optimization-0.3.13.tgz
 ```
 
 ## Turn it off

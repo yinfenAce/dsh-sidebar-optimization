@@ -79,14 +79,12 @@ test('settings card opens with the plugin title and version', () => {
   })(overlay);
   assert.ok(texts.includes('主页排版设置'));
   assert.ok(texts.some((t) => /^v0\.3\.\d+$/.test(t)));
-  const groups = [];
+  const tabs = [];
   (function walk(el) {
-    if (el && el.className === 'dsh-tweaks-group') groups.push(el);
+    if (el && typeof el.className === 'string' && el.className.split(/\s+/).indexOf('dsh-tweaks-tab') >= 0) tabs.push(el);
     for (const child of (el && el.children) || []) walk(child);
   })(overlay);
-  assert.equal(groups.length, 3);
-  assert.ok(!groups[0].open);
-  assert.ok(!groups[1].open);
-  assert.ok(!groups[2].open);
-  assert.ok(texts.some((t) => t.indexOf('点击分组标题') >= 0));
+  assert.equal(tabs.length, 3);
+  assert.deepEqual(tabs.map((t) => t.textContent), ['布局与手势', '显示与余额', '用量入口']);
+  assert.ok(tabs[0].className.indexOf('is-active') >= 0);
 });

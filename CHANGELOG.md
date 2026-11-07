@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.7 — 2026-11-07
+
+- Fix: `dsh-context` enabled but not detected. Usage-plugin matching now reads `entryId`/`moduleName` from `pluginManager/listPlugins`; bundle and plugin-manager calls fall back to the host RPC when the client remote namespace is absent.
+- Context navigation uses the matched context entry, so an enabled Context bundle opens even when its bundle id is not literally `dsh-context`.
+- Balance-not-ready toast now uses the custom label: 「正在获取{label}…」 / 「暂时获取不到{label}」.
+
 ## 0.2.6 — 2026-11-07
 
 - Menu subtitle changed to 「第三方插件 / 平台用量」.

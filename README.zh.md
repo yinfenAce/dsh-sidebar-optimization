@@ -9,9 +9,9 @@
 
 ## 截图
 
-![设置卡片结构](docs/screenshots/settings-card.svg)
+![设置卡片](docs/screenshots/settings-real.jpg)
 
-*设置卡片结构示意（非实机截图）。实际界面以当前 Release 为准。*
+*实机截图（v0.3.13，余额已隐藏）。*
 
 ## 功能
 

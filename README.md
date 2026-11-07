@@ -12,9 +12,9 @@ that plugin; it only overrides a few mobile-specific styles and adds a couple of
 
 ## Screenshot
 
-![Settings card structure](docs/screenshots/settings-card.svg)
+![Settings card](docs/screenshots/settings-real.jpg)
 
-*设置卡片结构示意（非实机截图）。实际界面以当前 Release 为准。*
+*Real device screenshot (v0.3.13; balance hidden).*
 
 ## What it does
 

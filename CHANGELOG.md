@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.12 — 2026-11-07
+
+- Removed the card × button (a native floating overlay covered it); tapping outside now closes with a 140ms fade/scale-out.
+- Added 「删除手动入口」.
+- If a manual entry has a package name and that plugin is disabled/absent, the entry is removed automatically on load and when the card opens.
+- Card hint now says tapping outside closes.
+
 ## 0.3.11 — 2026-11-07
 
 - Motion polish: settings card fades/scales in (160–180ms), balance menu fades/slides in (140ms); no layout or behavior changes.

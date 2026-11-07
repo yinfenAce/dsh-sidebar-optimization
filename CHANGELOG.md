@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.3 — 2026-11-07
+
+- Balance quick actions: tap only the amount (not the label or colon) to open a small menu.
+- 「查看用量」 opens the installed `dsh-context` plugin (Context / 上下文洞察) when present; otherwise the option is disabled.
+- 「充值」 opens `https://platform.deepseek.com/top_up`.
+- The menu closes on outside tap, Escape, or when the drawer closes.
+
 ## 0.2.2 — 2026-11-07
 
 - Fix: remove the drawer/backdrop `z-index` override that covered sidebar popovers. The workspace filter/sliders button and the settings dialog now open normally.

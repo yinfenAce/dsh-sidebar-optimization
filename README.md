@@ -24,6 +24,7 @@ that plugin; it only overrides a few mobile-specific styles and adds a couple of
 - **Session tap closes the drawer** — after selecting a session, the drawer collapses automatically
   (unless DSH already closed it).
 - **Open reveals the active session** — opening the drawer scrolls the current session into view.
+- **Balance quick actions** — tap the amount to open 「查看用量 / 充值」; usage jumps to the installed Context plugin, top-up opens the DeepSeek platform.
 - **Live account balance (optional)** — refreshed whenever the drawer opens, formatted to two decimals. It is shown only when the DeepSeek mark is hidden; with the mark hidden and balance off, nothing is shown. A 2–4 character custom label can be saved in the card (restart DSH to apply).
 - **Left/right layout swap** — move the sidebar to the right and the right panel to the left; the swipe direction reverses with it (right third, swipe left to open).
 - **Draggable ☰ button** — long-press the ☰ and drag it; on release it snaps to the nearest side, and the position is remembered.

@@ -1,5 +1,7 @@
 # 侧边栏优化 · dsh-sidebar-optimization
 
+![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · **v0.1.0** · [Changelog](CHANGELOG.md)
+
 Sidebar optimization for [DSHBox](https://github.com/WSK-build/DSHBox) / DeepSeek Harness (DSH).
 
 A small, client-only layer on top of the bundled `@local/dsh-mobile-adapt` plugin. It does not replace

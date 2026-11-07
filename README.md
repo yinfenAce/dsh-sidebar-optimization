@@ -3,7 +3,7 @@
 [![CI](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml/badge.svg)](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml)
 # 侧边栏优化 · dsh-sidebar-optimization
 
-![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · **v0.7.3** · [Changelog](CHANGELOG.md)
+![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · **v0.7.4** · [Changelog](CHANGELOG.md)
 
 Sidebar optimization for [DSHBox](https://github.com/WSK-build/DSHBox) / DeepSeek Harness (DSH).
 
@@ -47,7 +47,7 @@ The settings card follows the system language by default. Switch between **Auto 
   during the reflow caused by the on-screen keyboard.
 - **Keyboard follow** — `visualViewport` resizes the root immediately when the keyboard opens/closes,
   instead of waiting for `100dvh` to be recalculated.
-- **Adjustable swipe zone** — 20–80% of the screen from the active edge, with a flashing light-blue guide while you adjust it; the guide stays under the settings card.
+- **Adjustable swipe zone** — 20–80% of the screen from the active edge, with a flashing guide in the current accent color (white by default) while you adjust it; the guide stays under the settings card.
 - **☰ position reset** — long-press drag still works; a reset button restores the default position.
 - **Motion switch** — tab switches and conditional rows animate too; turn it off to make card, toast, guide, menu, tab and view animations complete immediately.
 - **Low-balance dot** — when the warning threshold is breached, a small red dot appears on the 「主页排版设置」 row; the last low state is remembered so it shows immediately when the drawer opens, without revealing the amount.
@@ -109,7 +109,7 @@ Then restart DSH (or reload the DSH page) so the client bundle is served.
 Every release also attaches an npm-format tarball, so you can install an exact version without publishing to npm:
 
 ```sh
-dsh plugin --profile web add https://github.com/yinfenAce/dsh-sidebar-optimization/releases/download/v0.7.3/dsh-sidebar-optimization-0.7.3.tgz
+dsh plugin --profile web add https://github.com/yinfenAce/dsh-sidebar-optimization/releases/download/v0.7.4/dsh-sidebar-optimization-0.7.4.tgz
 ```
 
 ## Turn it off

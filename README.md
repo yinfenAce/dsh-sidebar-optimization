@@ -12,7 +12,7 @@ that plugin; it only overrides a few mobile-specific styles and adds a couple of
 
 ## Language
 
-The settings card follows the system language by default. Switch between **Auto / 中文 / English** under **General**. English is an initial static translation, not a runtime translation service; wording feedback is welcome.
+The settings card follows the system language by default. Switch between **Auto / 中文 / English** under **General**. English is an initial static translation, not a runtime translation service. Wording improvements are welcome via [TRANSLATIONS.md](TRANSLATIONS.md).
 
 ## Screenshot
 

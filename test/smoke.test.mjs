@@ -85,7 +85,8 @@ test('settings card opens with the plugin title and version', () => {
     for (const child of (el && el.children) || []) walk(child);
   })(overlay);
   assert.equal(groups.length, 3);
-  assert.equal(groups[0].open, true);
-  assert.equal(groups[1].open, true);
+  assert.ok(!groups[0].open);
+  assert.ok(!groups[1].open);
   assert.ok(!groups[2].open);
+  assert.ok(texts.some((t) => t.indexOf('点击分组标题') >= 0));
 });

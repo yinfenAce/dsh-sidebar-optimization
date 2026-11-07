@@ -3,7 +3,7 @@
 [English](README.md) | **中文**
 
 [![CI](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml/badge.svg)](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml)
-![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · **v0.3.15** · [更新记录](CHANGELOG.md)
+![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · **v0.3.16** · [更新记录](CHANGELOG.md)
 
 面向 [DSHBox](https://github.com/WSK-build/DSHBox) / DeepSeek Harness 的移动端侧边栏优化插件。它是纯客户端插件，不替换内置的 `@local/dsh-mobile-adapt`，只覆盖部分移动端样式并增加交互。
 
@@ -41,7 +41,7 @@
 - **余额隐私**：开启后金额显示为 `****`，右侧出现带斜线的眼睛按钮；点击眼睛显示余额，再点恢复星号；
 - **余额预警**：开启后显示阈值设置，默认 ¥1；余额小于等于阈值时数字变红，阈值可自定义（≥0）；
 - **用量入口**：优先手动入口，其次自动识别已启用的用量/上下文插件，最后打开官方平台用量页；
-- **设置分组**：布局与手势、显示与余额、用量入口三组；用量入口默认折叠；
+- **设置分组**：布局与手势、显示与余额、用量入口三组；三组默认全部折叠，打开卡片即可同时看到三个标题；
 - **设置卡片可滚动**：屏幕较矮时内容可滚动，不遮挡操作。
 
 ## 安装
@@ -55,7 +55,7 @@ dsh plugin --profile web add github:yinfenAce/dsh-sidebar-optimization
 或使用 Release 的固定版本 tarball：
 
 ```sh
-dsh plugin --profile web add https://github.com/yinfenAce/dsh-sidebar-optimization/releases/download/v0.3.15/dsh-sidebar-optimization-0.3.15.tgz
+dsh plugin --profile web add https://github.com/yinfenAce/dsh-sidebar-optimization/releases/download/v0.3.16/dsh-sidebar-optimization-0.3.16.tgz
 ```
 
 安装后需要**完全退出 DSHBox 再启动**；只刷新页面不会重新加载客户端插件。

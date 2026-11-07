@@ -3,7 +3,7 @@
 [![CI](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml/badge.svg)](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml)
 # 侧边栏优化 · dsh-sidebar-optimization
 
-![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · **v0.7.0** · [Changelog](CHANGELOG.md)
+![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · **v0.7.1** · [Changelog](CHANGELOG.md)
 
 Sidebar optimization for [DSHBox](https://github.com/WSK-build/DSHBox) / DeepSeek Harness (DSH).
 
@@ -12,7 +12,7 @@ that plugin; it only overrides a few mobile-specific styles and adds a couple of
 
 ## Language
 
-The settings card follows the system language by default. Switch between **Auto / 中文 / English** under **General**.
+The settings card follows the system language by default. Switch between **Auto / 中文 / English** under **General**. English is an initial static translation, not a runtime translation service; wording feedback is welcome.
 
 ## Screenshot
 
@@ -109,7 +109,7 @@ Then restart DSH (or reload the DSH page) so the client bundle is served.
 Every release also attaches an npm-format tarball, so you can install an exact version without publishing to npm:
 
 ```sh
-dsh plugin --profile web add https://github.com/yinfenAce/dsh-sidebar-optimization/releases/download/v0.7.0/dsh-sidebar-optimization-0.7.0.tgz
+dsh plugin --profile web add https://github.com/yinfenAce/dsh-sidebar-optimization/releases/download/v0.7.1/dsh-sidebar-optimization-0.7.1.tgz
 ```
 
 ## Turn it off

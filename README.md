@@ -3,7 +3,7 @@
 [![CI](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml/badge.svg)](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml)
 # 侧边栏优化 · dsh-sidebar-optimization
 
-![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · **v0.6.4** · [Changelog](CHANGELOG.md)
+![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · **v0.6.5** · [Changelog](CHANGELOG.md)
 
 Sidebar optimization for [DSHBox](https://github.com/WSK-build/DSHBox) / DeepSeek Harness (DSH).
 
@@ -32,7 +32,7 @@ that plugin; it only overrides a few mobile-specific styles and adds a couple of
 - **Scene presets** — Default / One-hand / Reading / Full-screen; each sets width, side, swipe range and motion at once.
 - **Reading density** — body font 13–20px, line height 1.3–2.0, message gap 0–24px; the Reading scene enables it with 16px / 1.8 / 12px.
 - **Accent color** — Default / Red / Orange / Yellow / Green / Blue / Purple, plus transition hues; applies to this plugin's tabs, switches, sliders and primary buttons.
-- **Balance currency** — Auto / CNY / USD; shown only when the account has multiple wallets; Auto prefers CNY and falls back to the first.
+- **Balance currency** — dynamically generated from the account's actual wallets, three per row; shown only with multiple wallets; Auto prefers CNY and falls back to the first.
 - **Diagnostics** — copy plugin version, UA, viewport, current settings and last error; no account, balance or chat data.
 - **Tap the blank area to close** — the backdrop is forced visible (the bundled plugin hides it with an
   inline `display:none`), so tapping the right-hand blank strip closes the drawer.
@@ -46,7 +46,7 @@ that plugin; it only overrides a few mobile-specific styles and adds a couple of
 - **Adjustable swipe zone** — 20–80% of the screen from the active edge, with a flashing light-blue guide while you adjust it; the guide stays under the settings card.
 - **☰ position reset** — long-press drag still works; a reset button restores the default position.
 - **Motion switch** — tab switches and conditional rows animate too; turn it off to make card, toast, guide, menu, tab and view animations complete immediately.
-- **Low-balance dot** — when the warning threshold is breached, a small red dot appears on the 「主页排版设置」 row; it never reveals the amount.
+- **Low-balance dot** — when the warning threshold is breached, a small red dot appears on the 「主页排版设置」 row; the last low state is remembered so it shows immediately when the drawer opens, without revealing the amount.
 - **Swipe gestures (experimental)** — swipe right from the left third of the screen (chat, plugins, task board or any other page) to open; swipe left to close. If it does not trigger on your device, the ☰ button still works; it can be turned off in the settings card.
 - **Session tap closes the drawer** — after selecting a session, the drawer collapses automatically
   (unless DSH already closed it).
@@ -105,7 +105,7 @@ Then restart DSH (or reload the DSH page) so the client bundle is served.
 Every release also attaches an npm-format tarball, so you can install an exact version without publishing to npm:
 
 ```sh
-dsh plugin --profile web add https://github.com/yinfenAce/dsh-sidebar-optimization/releases/download/v0.6.4/dsh-sidebar-optimization-0.6.4.tgz
+dsh plugin --profile web add https://github.com/yinfenAce/dsh-sidebar-optimization/releases/download/v0.6.5/dsh-sidebar-optimization-0.6.5.tgz
 ```
 
 ## Turn it off

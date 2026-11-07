@@ -3,7 +3,7 @@
 [English](README.md) | **中文**
 
 [![CI](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml/badge.svg)](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml)
-![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · **v0.6.4** · [更新记录](CHANGELOG.md)
+![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · **v0.6.5** · [更新记录](CHANGELOG.md)
 
 面向 [DSHBox](https://github.com/WSK-build/DSHBox) / DeepSeek Harness 的移动端侧边栏优化插件。它是纯客户端插件，不替换内置的 `@local/dsh-mobile-adapt`，只覆盖部分移动端样式并增加交互。
 
@@ -29,13 +29,13 @@
 - **场景预设**：默认、单手、阅读、全屏；一键设置宽度、左右布局、滑动范围和动效；
 - **阅读密度**：正文字号 13–20px、行高 1.3–2.0、消息间距 0–24px；「阅读」场景会自动启用 16px / 1.8 / 12px。
 - **强调色**：默认、红、橙、黄、绿、蓝、紫，更多过渡色可展开；影响插件标签、开关、滑杆和主按钮；
-- **余额币种**：自动 / CNY / USD；仅在账户有多个钱包时显示，自动优先 CNY，不存在时回退第一个。
+- **余额币种**：按账户实际钱包动态生成，每行 3 个；仅在多个钱包时显示，自动优先 CNY。
 - **诊断信息**：复制插件版本、UA、视口、当前设置和最近错误；不含余额、聊天或账号。
 - **左右布局互换**：侧栏可移到右侧，滑动方向同步反转；
 - **滑动范围可调**：20%–80%，调整时显示浅蓝范围提示；
 - **☰ 位置重置**：长按仍可拖动；界面页提供重置按钮，恢复默认位置；
 - **界面动效开关**：分组切换、隐私/预警联动行也带过渡；关闭后卡片、提示、范围提示、菜单、分组和视图切换立即完成；
-- **低额预警红点**：余额低于阈值时，侧栏「主页排版设置」行显示红点，不显示金额。
+- **低额预警红点**：余额低于阈值时，侧栏「主页排版设置」行显示红点；记住上次低额状态，打开侧栏立即显示，不显示金额。
 - **点击空白关闭**：点击右侧空白区域收起侧栏；
 - **自由滚动**：面板、会话列表、底部区域作为一列滚动；
 - **长会话性能**：消息使用 `content-visibility: auto`，减少键盘弹起时的重排；
@@ -66,7 +66,7 @@ dsh plugin --profile web add github:yinfenAce/dsh-sidebar-optimization
 或使用 Release 的固定版本 tarball：
 
 ```sh
-dsh plugin --profile web add https://github.com/yinfenAce/dsh-sidebar-optimization/releases/download/v0.6.4/dsh-sidebar-optimization-0.6.4.tgz
+dsh plugin --profile web add https://github.com/yinfenAce/dsh-sidebar-optimization/releases/download/v0.6.5/dsh-sidebar-optimization-0.6.5.tgz
 ```
 
 安装后需要**完全退出 DSHBox 再启动**；只刷新页面不会重新加载客户端插件。

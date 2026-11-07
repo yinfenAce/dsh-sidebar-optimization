@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.5 — 2026-11-07
+
+- Removed the arbitrary page-URL field from the manual usage entry. A user-supplied URL could be used as a redirect/phishing entry and get the plugin reported.
+- Manual entry is now only 「插件包名 + 入口文字」; external navigation is limited to the hardcoded official `platform.deepseek.com` usage/top-up pages.
+
 ## 0.3.4 — 2026-11-07
 
 - Manual usage entry is now a proper form: plugin package name, entry label, and optional page URL.

@@ -21,6 +21,8 @@ that plugin; it only overrides a few mobile-specific styles and adds a couple of
 - **Session tap closes the drawer** — after selecting a session, the drawer collapses automatically
   (unless DSH already closed it).
 - **Open reveals the active session** — opening the drawer scrolls the current session into view.
+- **Hide the DeepSeek brand mark** — optional toggle in the settings card; the collapse control stays in place.
+- **Scrollable settings card** — the card stays centered; its content scrolls when the viewport is short.
 - **No blue focus ring on tap** — touch interactions no longer leave a square focus outline; keyboard focus rings are preserved.
 - **Copy that actually works** — a textarea/`execCommand` fallback backs the Clipboard API, and every code block gets a visible “复制” button.
 - **View-switch transition** — switching the top view/trajectory tab fades and lifts the new content in instead of snapping.

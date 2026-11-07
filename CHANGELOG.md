@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.4 — 2026-11-07
+
+- Manual usage entry is now a proper form: plugin package name, entry label, and optional page URL.
+- Package name identifies the plugin/enabled state; entry label clicks the feature tab/sidebar item; URL opens directly.
+- `dsh-usage-entry` stores JSON; the old plain-label value is still read as a label.
+
 ## 0.3.3 — 2026-11-07
 
 - Auto usage-plugin matching now includes the localized plugin title and Chinese keywords `用量` / `上下文`, so newly added usage plugins are detected more often.

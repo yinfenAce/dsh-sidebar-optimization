@@ -40,7 +40,7 @@ The settings card follows the system language by default. Switch between **Auto 
 - **Reading density** — body font 13–20px, line height 1.3–2.0, message gap 0–24px; the Reading scene enables it with 16px / 1.8 / 12px.
 - **Accent color** — Default / Red / Orange / Yellow / Green / Blue / Purple, plus transition hues; applies to this plugin's tabs, switches, sliders and primary buttons.
 - **Balance currency** — dynamically generated from the account's actual wallets, three per row; shown only with multiple wallets; Auto prefers CNY and falls back to the first.
-- **Diagnostics** — copy plugin version, UA, viewport, current settings and last error; no account, balance or chat data.
+- **Diagnostics** — copies plugin/app versions when available, Android/WebView/model, screen/orientation, settings, feature checks and the last 5 errors; no account, balance or chat data. The report button prefills a GitHub issue with the same data.
 - **Tap the blank area to close** — the backdrop is forced visible (the bundled plugin hides it with an
   inline `display:none`), so tapping the right-hand blank strip closes the drawer.
 - **Free single scroll** — panels, the session list and the footer scroll as one column, instead of the

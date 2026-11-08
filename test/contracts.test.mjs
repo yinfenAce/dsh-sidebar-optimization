@@ -64,4 +64,11 @@ test('accent and reading prefs are applied after their tables are defined', () =
   const readCall = client.indexOf('applyReadDensity();');
   assert.ok(readDefaults > 0 && readCall > readDefaults);
 });
+test('client VERSION matches package.json', () => {
+  const pkg = JSON.parse(read('package.json'));
+  const client = read('lib/client.js');
+  const match = client.match(/var VERSION = '([^']+)'/);
+  assert.ok(match, 'client VERSION should exist');
+  assert.equal(match[1], pkg.version);
+});
 

@@ -3,7 +3,7 @@
 [English](README.md) | **中文**
 
 [![CI](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml/badge.svg)](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml)
-![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · **v0.8.1** · [更新记录](CHANGELOG.md)
+![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · [![downloads](https://img.shields.io/github/downloads/yinfenAce/dsh-sidebar-optimization/total?label=下载)](https://github.com/yinfenAce/dsh-sidebar-optimization/releases) · **v0.8.1** · [更新记录](CHANGELOG.md)
 
 面向 [DSHBox](https://github.com/WSK-build/DSHBox) / DeepSeek Harness 的移动端侧边栏优化插件。它是纯客户端插件，不替换内置的 `@local/dsh-mobile-adapt`，只覆盖部分移动端样式并增加交互。
 

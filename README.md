@@ -3,7 +3,7 @@
 [![CI](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml/badge.svg)](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml)
 # 侧边栏优化 · dsh-sidebar-optimization
 
-![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · **v0.8.1** · [Changelog](CHANGELOG.md)
+![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · [![downloads](https://img.shields.io/github/downloads/yinfenAce/dsh-sidebar-optimization/total?label=downloads)](https://github.com/yinfenAce/dsh-sidebar-optimization/releases) · **v0.8.1** · [Changelog](CHANGELOG.md)
 
 Sidebar optimization for [DSHBox](https://github.com/WSK-build/DSHBox) / DeepSeek Harness (DSH).
 

@@ -3,7 +3,7 @@
 [![CI](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml/badge.svg)](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml)
 # 侧边栏优化 · dsh-sidebar-optimization
 
-![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · [![downloads](https://img.shields.io/github/downloads/yinfenAce/dsh-sidebar-optimization/total?label=downloads)](https://github.com/yinfenAce/dsh-sidebar-optimization/releases) · **v0.8.4** · [Changelog](CHANGELOG.md)
+![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · [![downloads](https://img.shields.io/github/downloads/yinfenAce/dsh-sidebar-optimization/total?label=downloads)](https://github.com/yinfenAce/dsh-sidebar-optimization/releases) · **v0.8.5** · [Changelog](CHANGELOG.md)
 
 Sidebar optimization for [DSHBox](https://github.com/WSK-build/DSHBox) / DeepSeek Harness (DSH).
 
@@ -18,7 +18,7 @@ The settings card follows the system language by default. Switch between **Auto 
 
 ![Settings card](docs/screenshots/settings-real.jpg)
 
-*Real device screenshot on v0.8.4: scene presets, live width preview and accent color.*
+*Real device screenshot on v0.8.4; settings UI unchanged in v0.8.5: scene presets, live width preview and accent color.*
 
 ![Balance privacy and warning](docs/screenshots/settings-privacy.jpg)
 
@@ -112,7 +112,7 @@ Then restart DSH (or reload the DSH page) so the client bundle is served.
 Every release also attaches an npm-format tarball, so you can install an exact version without publishing to npm:
 
 ```sh
-dsh plugin --profile web add https://github.com/yinfenAce/dsh-sidebar-optimization/releases/download/v0.8.4/dsh-sidebar-optimization-0.8.4.tgz
+dsh plugin --profile web add https://github.com/yinfenAce/dsh-sidebar-optimization/releases/download/v0.8.5/dsh-sidebar-optimization-0.8.5.tgz
 ```
 
 ## Turn it off

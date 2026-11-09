@@ -3,7 +3,7 @@
 [English](README.md) | **中文**
 
 [![CI](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml/badge.svg)](https://github.com/yinfenAce/dsh-sidebar-optimization/actions/workflows/ci.yml)
-![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · [![downloads](https://img.shields.io/github/downloads/yinfenAce/dsh-sidebar-optimization/total?label=下载)](https://github.com/yinfenAce/dsh-sidebar-optimization/releases) · **v0.8.4** · [更新记录](CHANGELOG.md)
+![version](https://img.shields.io/github/v/tag/yinfenAce/dsh-sidebar-optimization?label=version) · [![downloads](https://img.shields.io/github/downloads/yinfenAce/dsh-sidebar-optimization/total?label=下载)](https://github.com/yinfenAce/dsh-sidebar-optimization/releases) · **v0.8.5** · [更新记录](CHANGELOG.md)
 
 面向 [DSHBox](https://github.com/WSK-build/DSHBox) / DeepSeek Harness 的移动端侧边栏优化插件。它是纯客户端插件，不替换内置的 `@local/dsh-mobile-adapt`，只覆盖部分移动端样式并增加交互。
 
@@ -15,7 +15,7 @@
 
 ![设置卡片](docs/screenshots/settings-real.jpg)
 
-*实机截图（v0.8.4）：场景预设、实时宽度预览与强调色。*
+*实机截图（v0.8.4；v0.8.5 设置界面未变）：场景预设、实时宽度预览与强调色。*
 
 ![余额隐私与预警](docs/screenshots/settings-privacy.jpg)
 
@@ -73,7 +73,7 @@ dsh plugin --profile web add github:yinfenAce/dsh-sidebar-optimization
 或使用 Release 的固定版本 tarball：
 
 ```sh
-dsh plugin --profile web add https://github.com/yinfenAce/dsh-sidebar-optimization/releases/download/v0.8.4/dsh-sidebar-optimization-0.8.4.tgz
+dsh plugin --profile web add https://github.com/yinfenAce/dsh-sidebar-optimization/releases/download/v0.8.5/dsh-sidebar-optimization-0.8.5.tgz
 ```
 
 安装后需要**完全退出 DSHBox 再启动**；只刷新页面不会重新加载客户端插件。

@@ -1,0 +1,8 @@
+# Entry for WSK-build/awesome-dsh-mobile-plugins
+# Path in that repository: data/plugins/yinfenAce__dsh-sidebar-optimization.yml
+url: https://github.com/yinfenAce/dsh-sidebar-optimization
+name: "yinfenAce/dsh-sidebar-optimization#侧边栏优化"
+category: ui
+description:
+  en: "A client-only DSHBox sidebar overlay: adjustable 45–100% width, 20–80% swipe zone, reading density, accent color, tap-outside/session close, free scrolling and a sticky footer. Optional balance privacy and diagnostics; no network calls or data collection. DSHBox 1.5.x / DSH 0.2.x / Android 10+."
+  zh: "DSHBox 侧边栏客户端增强：45–100% 宽度、20–80% 滑动范围、阅读密度、强调色、点空白/点会话关闭、整列滚动与固定底栏；可选余额隐私和诊断。不联网、不采集数据。兼容 DSHBox 1.5.x / DSH 0.2.x / Android 10+。"

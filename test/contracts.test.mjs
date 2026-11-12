@@ -72,3 +72,15 @@ test('client VERSION matches package.json', () => {
   assert.equal(match[1], pkg.version);
 });
 
+test('market entry uses the current width and swipe ranges', () => {
+  const entry = read('market-entry.yml');
+  assert.match(entry, /45–100%/);
+  assert.match(entry, /20–80%/);
+  assert.ok(!entry.includes('45–80%'), 'stale 45–80% width claim');
+  assert.ok(!entry.includes('实验性'), 'stale experimental swipe claim');
+});
+
+test('stale market PR draft is not left in the repository', () => {
+  assert.equal(fs.existsSync(path.join(root, 'PR.md')), false);
+});
+
